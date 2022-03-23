@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Courgette&family=Lobster&family=Noto+Sans&display=swap");
+
+.navbar {
+  background: #22313f;
+}
+.h2 {
+  font-family: "Arizonia", cursive;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+.MuiMenu-list{
+    width: 90vw;
+}

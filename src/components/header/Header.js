@@ -7,8 +7,10 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import animation from '../../images/coding-freak.gif'
-import './header.css';
+import animation from "../../images/coding-freak.gif";
+import "./header.css";
+import Typed from "react-typed";
+import Typist from "react-typist";
 
 const theme = createTheme();
 
@@ -16,7 +18,7 @@ export default function Header() {
   return (
     <ThemeProvider theme={theme} className="about">
       <CssBaseline />
-      <div className="header">
+      <div className="header container">
         <Grid
           container
           direction="row"
@@ -31,25 +33,25 @@ export default function Header() {
                 pb: 6,
               }}
             >
-              <Container maxWidth="sm">
-                <Typography
-                  component="h1"
-                  variant="h2"
-                  align="center"
-                  color="text.primary"
-                  gutterBottom
-                >
-                  Album layout
-                </Typography>
+              <Container maxWidth="sm" className="header-text">
+                <Typed
+                  strings={[
+                    "Hi, My name is Takara Truong", 
+                    "I'm a Full Stack Developer",
+                    "I Love Software Development",
+                    "I Love All My Subscribers",
+                  ]}
+                  typeSpeed={150}
+                  backSpeed={100}
+                  loop
+                />
                 <Typography
                   variant="h5"
                   align="center"
                   color="text.secondary"
                   paragraph
                 >
-                  Something short and leading about the collection below—its
-                  contents, the creator, etc. Make it short and sweet, but not
-                  too short so folks don&apos;t simply skip over it entirely.
+                  A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.
                 </Typography>
                 <Stack
                   sx={{ pt: 4 }}
@@ -58,13 +60,12 @@ export default function Header() {
                   justifyContent="center"
                 >
                   <Button variant="contained">Main call to action</Button>
-                  <Button variant="outlined">Secondary action</Button>
                 </Stack>
               </Container>
             </Box>
           </Grid>
           <Grid item>
-              <img src={animation} alt="guy coding" className="headerImg"/>
+            <img src={animation} alt="guy coding" className="headerImg" />
           </Grid>
         </Grid>
         {/* Hero unit */}

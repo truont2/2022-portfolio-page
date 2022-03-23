@@ -1,21 +1,25 @@
-import './App.css';
-import Footer from './components/footer/Footer';
-import Skills from './components/skills/Skills';
-import About from './components/about/About';
-import Header from './components/header/Header';
-import Work from './components/work/Work';
-import Navbar from './components/navbar/Navbar';
+import "./App.css";
+import Footer from "./components/footer/Footer";
+import Skills from "./components/skills/Skills";
+import About from "./components/about/About";
+import Header from "./components/header/Header";
+import Work from "./components/work/Work";
+import Navbar from "./components/navbar/Navbar";
+import Nabbar from './components/navbar/Nabbar';
+import { StyledEngineProvider } from "@mui/material/styles";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Work />
-      <About />
-      <Skills />
-      <Footer />
-    </div>
+    <StyledEngineProvider injectFirst>
+      <div className="App">
+        <Navbar />
+        <Header />
+        <Work />
+        <About />
+        <Skills />
+        <Footer />
+      </div>
+    </StyledEngineProvider>
   );
 }
 

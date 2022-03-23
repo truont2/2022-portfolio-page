@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './work.css';
 
 const cards = [1, 2, 3, 4, 5, 6];
 
@@ -18,7 +19,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <main>
+      <div className='work container'>
         {/* Hero unit */}
         <Container sx={{ py: 8 }} maxWidth="lg">
           {/* End hero unit */}
@@ -26,7 +27,8 @@ export default function Album() {
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{height: '100%', display: 'flex', flexDirection: 'column' }}
+                  className="project"
                 >
                   <CardMedia
                     component="img"
@@ -55,7 +57,7 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
-      </main>
+      </div>
     </ThemeProvider>
   );
 }

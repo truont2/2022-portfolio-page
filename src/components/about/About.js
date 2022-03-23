@@ -26,6 +26,7 @@ export default function ComplexGrid() {
         direction="row"
         justifyContent="center"
         alignItems="center"
+        className="About container"
       >
         <Grid item xs={12} sm={4} md={4}>
           <ButtonBase sx={{ width: "100%", height: "100%" }}>
