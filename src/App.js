@@ -5,7 +5,6 @@ import About from "./components/about/About";
 import Header from "./components/header/Header";
 import Work from "./components/work/Work";
 import Navbar from "./components/navbar/Navbar";
-import Nabbar from './components/navbar/Nabbar';
 import { StyledEngineProvider } from "@mui/material/styles";
 
 function App() {

@@ -10,7 +10,10 @@ import Grid from "@mui/material/Grid";
 import animation from "../../images/coding-freak.gif";
 import "./header.css";
 import Typed from "react-typed";
-import Typist from "react-typist";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import IconButton from "@mui/material/IconButton";
 
 const theme = createTheme();
 
@@ -36,10 +39,10 @@ export default function Header() {
               <Container maxWidth="sm" className="header-text">
                 <Typed
                   strings={[
-                    "Hi, My name is Takara Truong", 
+                    "Hi, My name is Takara Truong",
                     "I'm a Full Stack Developer",
                     "I Love Software Development",
-                    "I Love All My Subscribers",
+                    "Check out my Projects",
                   ]}
                   typeSpeed={150}
                   backSpeed={100}
@@ -47,20 +50,33 @@ export default function Header() {
                 />
                 <Typography
                   variant="h5"
-                  align="center"
+                  align="left"
                   color="text.secondary"
                   paragraph
                 >
-                  A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.
+                  A passionate Full Stack Web Developer and Mobile App Developer
+                  having an experience of building Web applications with
+                  JavaScript / Reactjs / Nodejs / Python and some other cool
+                  libraries.
                 </Typography>
                 <Stack
-                  sx={{ pt: 4 }}
+                  sx={{ p: 4 }}
                   direction="row"
                   spacing={2}
                   justifyContent="center"
+                  color="blue"
                 >
-                  <Button variant="contained">Main call to action</Button>
+                  <IconButton size="large" aria-label="Github" color="inherit">
+                    <GitHubIcon />
+                  </IconButton>
+                  <IconButton size="large" aria-label="Github" color="inherit" onClick={() => window.location.href="https://www.linkedin.com/in/takaratruong/"}>
+                    <LinkedInIcon />
+                  </IconButton>
+                  <IconButton size="large" aria-label="Github" color="inherit">
+                    <FacebookIcon />
+                  </IconButton>
                 </Stack>
+                <Button variant="contained">SEE MY RESUME</Button>
               </Container>
             </Box>
           </Grid>
