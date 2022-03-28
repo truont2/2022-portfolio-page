@@ -7,19 +7,25 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import animation from "../../images/coding-freak.gif";
 import "./header.css";
 import Typed from "react-typed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
+import Part from "../Particles";
+
+
+import Lott from '../Lottie/Lottie.js'
+import codingAnimation from "../Lottie/coding.json";
+
 
 const theme = createTheme();
 
 export default function Header() {
   return (
-    <ThemeProvider theme={theme} className="about">
+    <div className="header-section work">
+      {/* <Part /> */}
       <CssBaseline />
       <div className="header container">
         <Grid
@@ -50,13 +56,13 @@ export default function Header() {
                 />
                 <Typography
                   variant="h5"
-                  align="left"
-                  color="text.secondary"
+                  align="center"
+                  color="inherit"
                   paragraph
                 >
-                  A passionate Full Stack Web Developer and Mobile App Developer
+                  A passionate Full Stack Web Developer
                   having an experience of building Web applications with
-                  JavaScript / Reactjs / Nodejs / Python and some other cool
+                  JavaScript / Reactjs / Nodejs / SQL and some other cool
                   libraries.
                 </Typography>
                 <Stack
@@ -66,26 +72,27 @@ export default function Header() {
                   justifyContent="center"
                   color="blue"
                 >
-                  <IconButton size="large" aria-label="Github" color="inherit">
+                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://github.com/truont2"}>
                     <GitHubIcon />
                   </IconButton>
-                  <IconButton size="large" aria-label="Github" color="inherit" onClick={() => window.location.href="https://www.linkedin.com/in/takaratruong/"}>
+                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://www.linkedin.com/in/takaratruong/"}>
                     <LinkedInIcon />
                   </IconButton>
-                  <IconButton size="large" aria-label="Github" color="inherit">
+                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://www.facebook.com/takara.truong.58"}>
                     <FacebookIcon />
                   </IconButton>
                 </Stack>
-                <Button variant="contained">SEE MY RESUME</Button>
+                <Button variant="contained" onClick={() => window.location.href = "https://drive.google.com/file/d/135RKqrj4_9NuncPE7WlKpOo05Fa7Zzbe/view?usp=sharing"}>SEE MY RESUME</Button>
               </Container>
             </Box>
           </Grid>
           <Grid item>
-            <img src={animation} alt="guy coding" className="headerImg" />
+            {/* <img src="https://assets4.lottiefiles.com/packages/lf20_iv4dsx3q.json" alt="guy coding" className="headerImg" /> */}
+            <Lott animationData={codingAnimation} size={500} />
           </Grid>
         </Grid>
         {/* Hero unit */}
       </div>
-    </ThemeProvider>
+    </div>
   );
 }

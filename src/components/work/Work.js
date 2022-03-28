@@ -1,32 +1,62 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import './work.css';
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import CssBaseline from "@mui/material/CssBaseline";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "./work.css";
+import Proj from "../Card";
+import data from "../../data";
+import Fade from "react-reveal/Fade";
 
 const cards = [1, 2, 3, 4, 5, 6];
 
 const theme = createTheme();
 
-export default function Album() {
+export default function Work() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <div className='work container'>
+    <container className="slanted-div">
+      <div className="container">
         {/* Hero unit */}
+        <Typography
+          variant="h2"
+          align="center"
+          color="text.secondary"
+          paragraph
+        >
+          Projects
+        </Typography>
         <Container sx={{ py: 8 }} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
+            {data.projects.map((project, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
+                <Fade left>
+                <Proj
+                  key={index}
+                  heading={project.title}
+                  paragraph={project.para}
+                  imgUrl={project.imageSrc}
+                  projectLink={project.url}
+                  tools={project.tools}
+                />
+                </Fade>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </div>
+    </container>
+  );
+}
+
+{
+  /* <Card
                   sx={{height: '100%', display: 'flex', flexDirection: 'column' }}
                   className="project"
                 >
@@ -52,12 +82,5 @@ export default function Album() {
                     <Button size="small">View</Button>
                     <Button size="small">Edit</Button>
                   </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </div>
-    </ThemeProvider>
-  );
+                </Card> */
 }

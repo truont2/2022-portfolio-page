@@ -3,10 +3,11 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-import naruto from "../../images/naruto.jpg";
 import "./about.css";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import data from "../../data";
+import Fade from "react-reveal/Fade";
 
 const Img = styled("img")({
   margin: "auto",
@@ -19,37 +20,51 @@ const theme = createTheme();
 
 export default function ComplexGrid() {
   return (
-    <ThemeProvider theme={theme}>
+    <div className="container">
       <CssBaseline />
-      <Grid
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        className="About container"
-      >
-        <Grid item xs={12} sm={4} md={4}>
-          <ButtonBase sx={{ width: "100%", height: "100%" }}>
-            <img alt="complex" src={naruto} className="aboutImg" />
-          </ButtonBase>
-        </Grid>
+      <Typography variant="h2" align="center" color="text.secondary" paragraph>
+        About
+      </Typography>
+      <Fade right>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          className="About"
+        >
+          <Grid item xs={12} sm={4} md={4}>
+            <ButtonBase sx={{ width: "100%", height: "100%" }}>
+              <img alt="complex" src={data.aboutImage} className="aboutImg" />
+            </ButtonBase>
+          </Grid>
 
-        <Grid item xs={12} sm={4} md={4} container>
-          <Grid item xs container direction="column" spacing={2}>
-            <Grid item xs>
-              <Typography gutterBottom variant="subtitle1" component="div">
-                Standard license
-              </Typography>
-              <Typography variant="body2" gutterBottom>
-                Full resolution 1920x1080 • JPEG
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                ID: 1030114
-              </Typography>
+          <Grid item xs={12} sm={4} md={4} container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs className="About">
+                <Typography variant="p" align="center" color="black" paragraph>
+                  {data.aboutParaOne}
+                </Typography>
+                <Typography variant="p" align="center" color="black" paragraph>
+                  {data.aboutParaTwo}
+                </Typography>
+                <Typography variant="p" align="center" color="black" paragraph>
+                  {data.aboutParaThree}
+                </Typography>
+                {/* <p>
+                  {data.aboutParaOne}
+                  <br></br>
+                  <br></br>
+                  {data.aboutParaTwo}
+                  <br></br>
+                  <br></br>
+                  {data.aboutParaThree}
+                </p> */}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </ThemeProvider>
+      </Fade>
+    </div>
   );
 }

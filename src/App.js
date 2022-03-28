@@ -5,8 +5,8 @@ import About from "./components/about/About";
 import Header from "./components/header/Header";
 import Work from "./components/work/Work";
 import Navbar from "./components/navbar/Navbar";
+import Education from './components/Education/Education'
 import { StyledEngineProvider } from "@mui/material/styles";
-
 function App() {
   return (
     <StyledEngineProvider injectFirst>
@@ -15,6 +15,7 @@ function App() {
         <Header />
         <Work />
         <About />
+        <Education />
         <Skills />
         <Footer />
       </div>

@@ -127,8 +127,9 @@ const ResponsiveAppBar = (props) => {
   });
 
   const classes = useStyles();
+  // change the nav bar to scroll to the section on interest
   return (
-    <React.Fragment>
+    <React.Fragment className="navbar">
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar className="navbar">

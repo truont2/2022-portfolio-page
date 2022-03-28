@@ -1,17 +1,14 @@
-.icon {
-    transition: 250ms ease-in-out;
+.footer {
+    background: linear-gradient(35deg,#11cdef,#1171ef)!important;
+}
+
+.footer-icon {
     background: white;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    transition: 250ms ease-in-out;
 }
 
-.icon:hover {
+.footer-icon:hover {
     transform: translateY(-10px);
     background: white;
-}
-
-.skill-icon {
-    margin: 0 5px;
 }
