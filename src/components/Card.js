@@ -29,11 +29,6 @@ export default function MultiActionAreaCard({key, heading, paragraph, imgUrl, pr
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="small" color="primary" >
-          Link
-        </Button>
-      </CardActions> */}
     </Card>
   );
 }

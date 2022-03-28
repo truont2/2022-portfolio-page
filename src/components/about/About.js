@@ -42,24 +42,15 @@ export default function ComplexGrid() {
           <Grid item xs={12} sm={4} md={4} container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs className="About">
-                <Typography variant="p" align="center" color="black" paragraph>
+                <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaOne}
                 </Typography>
-                <Typography variant="p" align="center" color="black" paragraph>
+                <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaTwo}
                 </Typography>
-                <Typography variant="p" align="center" color="black" paragraph>
+                <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaThree}
                 </Typography>
-                {/* <p>
-                  {data.aboutParaOne}
-                  <br></br>
-                  <br></br>
-                  {data.aboutParaTwo}
-                  <br></br>
-                  <br></br>
-                  {data.aboutParaThree}
-                </p> */}
               </Grid>
             </Grid>
           </Grid>

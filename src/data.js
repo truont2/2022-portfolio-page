@@ -32,7 +32,7 @@ export default {
     {
       title: "FTCHr", //Project Title - Add Your Project Title Here
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
+        "Social Media application that allows pet owners to meet up and set up playdates for their pets by creating posts that dynamically render the location of the user on a map or direct messaging", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools: "Tools used - React, Sequelize, Socket.io, CSS, Axios, Material UI, React Leaflet, Mapbox, Cloudinary",
       imageSrc: neighbors,
