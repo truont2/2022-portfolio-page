@@ -2,7 +2,6 @@ import neighbors from './images/neighbors.jpg';
 import plane from './images/airplane.jpg';
 import anime from './images/anime.jpg';
 import user from './images/me.jpg'
-import htmlIcon from './images/html.png'
 
 export default {
   //(Please Do Not Remove The comma(,) after every variable)
@@ -226,5 +225,3 @@ export default {
 
   // End Contact Section ---------------
 }
-
-// Thanks for using this template, I would love to hear from you contact me at hello@chetanverma.com
