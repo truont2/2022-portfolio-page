@@ -38,6 +38,7 @@ export default function Work() {
                   imgUrl={project.imageSrc}
                   projectLink={project.url}
                   tools={project.tools}
+                  project={project}
                 />
                 </Fade>
               </Grid>

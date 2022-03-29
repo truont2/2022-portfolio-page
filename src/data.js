@@ -38,6 +38,7 @@ export default {
       imageSrc: neighbors,
       //Project URL - Add Your Project Url Here
       url: "https://ftchrapp.herokuapp.com/",
+      github:"https://github.com/amiramonte/FTCHr-Project-3"
     },
     {
       title: "SkyFall Travel", //Project Title - Add Your Project Title Here
@@ -48,6 +49,7 @@ export default {
       imageSrc: plane,
       //Project URL - Add Your Project Url Here
       url: "https://skyfall-travel.herokuapp.com/",
+      github: "https://github.com/hcweigand10/SkyFall-Travel"
     },
     {
       title: "What's that Anime?", //Project Title - Add Your Project Title Here
@@ -59,6 +61,7 @@ export default {
       imageSrc: anime,
       //Project URL - Add Your Project Url Here
       url: "https://andrewtranmsw.github.io/whatsThatAnime/",
+      github: "https://github.com/AndrewTranMSW/whatsThatAnime"
     },
     // {
     //   title: "Project Four", //Project Title - Add Your Project Title Here
