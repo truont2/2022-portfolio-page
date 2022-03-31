@@ -110,7 +110,7 @@ export default function StickyFooter() {
             color="text.secondary"
             paragraph
           >
-            <a href="mailto:truont2@gmial.com">truont2@gmail.com</a>
+            <a href="mailto:truont2@gmail.com">truont2@gmail.com</a>
           </Typography>
           <Typography
             variant="h6"
