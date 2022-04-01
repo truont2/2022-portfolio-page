@@ -12,32 +12,17 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import CssBaseline from "@mui/material/CssBaseline";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import HomeIcon from '@mui/icons-material/HomeOutlined';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenterOutlined';
-import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
-import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
-import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import HomeIcon from "@mui/icons-material/HomeOutlined";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenterOutlined";
+import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import "./navbar.css";
 
 const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   function HideOnScroll(props) {
     const { children, window } = props;
@@ -76,78 +61,78 @@ const ResponsiveAppBar = (props) => {
 
   const mobileMenuId = "primary-search-account-menu-mobile";
 
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-      className="mobile-nav"
-    >
-      <Typography
-        variant="h6"
-        noWrap
-        component="div"
-        className="h2"
-      >
-        Takara Truong
-      </Typography>
-      <hr />
-      <MenuItem>
-        <IconButton size="large" aria-label="Github" color="inherit">
-          <HomeIcon />
-        </IconButton>
-        <p>Home</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="LinkedIn" color="inherit">
-          <PersonOutlineIcon />
-        </IconButton>
-        <p>About Me</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="facebook" color="inherit">
-          <BusinessCenterIcon />
-        </IconButton>
-        <p>Experience</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="facebook" color="inherit">
-          <FolderOpenOutlinedIcon />
-        </IconButton>
-        <p>Projects</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="facebook" color="inherit">
-          <HandshakeOutlinedIcon />
-        </IconButton>
-        <p>Services</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="facebook" color="inherit">
-          <ContactPhoneOutlinedIcon />
-        </IconButton>
-        <p>Contact</p>
-      </MenuItem>
-    </Menu>
-  );
+  // const renderMobileMenu = (
+  //   <Menu
+  //     anchorEl={mobileMoreAnchorEl}
+  //     anchorOrigin={{
+  //       vertical: "top",
+  //       horizontal: "right",
+  //     }}
+  //     id={mobileMenuId}
+  //     keepMounted
+  //     transformOrigin={{
+  //       vertical: "top",
+  //       horizontal: "right",
+  //     }}
+  //     open={isMobileMenuOpen}
+  //     onClose={handleMobileMenuClose}
+  //     className="mobile-nav"
+  //   >
+  //     <Typography variant="h6" noWrap component="div" className="h2">
+  //       Takara Truong
+  //     </Typography>
+  //     <hr />
+  //     <a href="#Home">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="Github" color="inherit">
+  //           <HomeIcon />
+  //         </IconButton>
+  //         <p>Home</p>
+  //       </MenuItem>
+  //     </a>
+  //     <a href="#About">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="LinkedIn" color="inherit">
+  //           <PersonOutlineIcon />
+  //         </IconButton>
+  //         <p>About Me</p>
+  //       </MenuItem>
+  //     </a>
+  //     <a href="#Experiences">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="facebook" color="inherit">
+  //           <BusinessCenterIcon />
+  //         </IconButton>
+  //         <p>Experience</p>
+  //       </MenuItem>
+  //     </a>
+  //     <a href="#Services">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="facebook" color="inherit">
+  //           <HandshakeOutlinedIcon />
+  //         </IconButton>
+  //         <p>Services</p>
+  //       </MenuItem>
+  //     </a>
+  //     <a href="#Projects">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="facebook" color="inherit">
+  //           <FolderOpenOutlinedIcon />
+  //         </IconButton>
+  //         <p>Projects</p>
+  //       </MenuItem>
+  //     </a>
+  //     <a href="#Contact">
+  //       <MenuItem>
+  //         <IconButton size="large" aria-label="facebook" color="inherit">
+  //           <ContactPhoneOutlinedIcon />
+  //         </IconButton>
+  //         <p>Contact</p>
+  //       </MenuItem>
+  //     </a>
+  //   </Menu>
+  // );
 
-  const useStyles = makeStyles({
-    root: {
-      background: "#22313F",
-    },
-  });
-
-  const classes = useStyles();
   // change the nav bar to scroll to the section on interest
   return (
     <React.Fragment className="navbar">
@@ -160,7 +145,7 @@ const ResponsiveAppBar = (props) => {
                 variant="h6"
                 noWrap
                 component="div"
-                sx={{ display: { xs: "flex", md: "flex" } }}
+                sx={{ display: { xs: "none", md: "flex" } }}
                 className="h2"
               >
                 Takara Truong
@@ -170,68 +155,68 @@ const ResponsiveAppBar = (props) => {
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} />
 
               {/* link section */}
-              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              <Box sx={{ display: { xs: "flex", md: "flex" } }}>
                 <a href="#Home">
-                <IconButton
-                  size="large"
-                  aria-label="home icon"
-                  color="inherit"
-                >
-                  <HomeIcon />
-                </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="home icon"
+                    color="inherit"
+                  >
+                    <HomeIcon />
+                  </IconButton>
                 </a>
                 <a href="#About">
-                <IconButton
-                  size="large"
-                  aria-label="about icon"
-                  color="inherit"
-                  onClick={() => window.href="#about"}
-                >
-                  <PersonOutlineIcon />
-                </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="about icon"
+                    color="inherit"
+                    onClick={() => (window.href = "#about")}
+                  >
+                    <PersonOutlineIcon />
+                  </IconButton>
                 </a>
-                
-                <a href="#Experience">
-                <IconButton
-                  size="large"
-                  aria-label="Experience icon"
-                  color="inherit"
-                >
-                  <BusinessCenterIcon />
-                </IconButton>
+
+                <a href="#Experiences">
+                  <IconButton
+                    size="large"
+                    aria-label="Experience icon"
+                    color="inherit"
+                  >
+                    <BusinessCenterIcon />
+                  </IconButton>
                 </a>
-                
+
                 <a href="#Projects">
-                <IconButton
-                  size="large"
-                  aria-label="work icon"
-                  color="inherit"
-                >
-                  <FolderOpenOutlinedIcon />
-                </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="work icon"
+                    color="inherit"
+                  >
+                    <FolderOpenOutlinedIcon />
+                  </IconButton>
                 </a>
                 <a href="#Services">
-                <IconButton
-                  size="large"
-                  aria-label="services icon"
-                  color="inherit"
-                >
-                  <HandshakeOutlinedIcon />
-                </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="services icon"
+                    color="inherit"
+                  >
+                    <HandshakeOutlinedIcon />
+                  </IconButton>
                 </a>
                 <a href="#Contact">
-                <IconButton
-                  size="large"
-                  aria-label="Contact icon"
-                  color="inherit"
-                >
-                  <ContactPhoneOutlinedIcon />
-                </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="Contact icon"
+                    color="inherit"
+                  >
+                    <ContactPhoneOutlinedIcon />
+                  </IconButton>
                 </a>
               </Box>
 
               {/* renders the 3 dots  */}
-              <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              {/* <Box sx={{ display: { xs: "flex", md: "none" } }}>
                 <IconButton
                   size="large"
                   aria-label="show more"
@@ -244,7 +229,7 @@ const ResponsiveAppBar = (props) => {
                 </IconButton>
 
                 {renderMobileMenu}
-              </Box>
+              </Box> */}
             </Toolbar>
           </Container>
         </AppBar>

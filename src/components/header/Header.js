@@ -13,11 +13,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
-import Resume from "../../assets/Resume.pdf"
+import Resume from "../../assets/Resume.pdf";
 
-import Lott from '../Lottie/Lottie.js'
+import Lott from "../Lottie/Lottie.js";
 import codingAnimation from "../Lottie/coding.json";
-
 
 const theme = createTheme();
 
@@ -50,7 +49,7 @@ export default function Header() {
                   ]}
                   typeSpeed={150}
                   backSpeed={100}
-                  // loop
+                  loop
                 />
                 <Typography
                   variant="h5"
@@ -58,10 +57,9 @@ export default function Header() {
                   color="inherit"
                   paragraph
                 >
-                  A passionate Full Stack Web Developer
-                  having an experience of building Web applications with
-                  JavaScript / Reactjs / Nodejs / SQL and some other cool
-                  libraries.
+                  A passionate Full Stack Web Developer having an experience of
+                  building Web applications with JavaScript / Reactjs / Nodejs /
+                  SQL and some other cool libraries.
                 </Typography>
                 <Stack
                   sx={{ p: 4 }}
@@ -70,15 +68,33 @@ export default function Header() {
                   justifyContent="center"
                   color="blue"
                 >
-                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://github.com/truont2"}>
-                    <GitHubIcon />
-                  </IconButton>
-                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://www.linkedin.com/in/takaratruong/"}>
-                    <LinkedInIcon />
-                  </IconButton>
-                  <IconButton className="icon" size="large" aria-label="Github" onClick={() => window.location.href="https://www.facebook.com/takara.truong.58"}>
-                    <FacebookIcon />
-                  </IconButton>
+                  <a href="https://github.com/truont2" target="_blank">
+                    <IconButton
+                      className="icon"
+                      size="large"
+                      aria-label="Github"
+                    >
+                      <GitHubIcon />
+                    </IconButton>
+                  </a>
+                  <a href="https://www.linkedin.com/in/takaratruong/" target="_blank">
+                    <IconButton
+                      className="icon"
+                      size="large"
+                      aria-label="Github"
+                    >
+                      <LinkedInIcon />
+                    </IconButton>
+                  </a>
+                  <a href="https://www.facebook.com/takara.truong.58" target="_blank">
+                    <IconButton
+                      className="icon"
+                      size="large"
+                      aria-label="Github"
+                    >
+                      <FacebookIcon />
+                    </IconButton>
+                  </a>
                 </Stack>
                 <Stack
                   sx={{ p: 4 }}
@@ -87,8 +103,12 @@ export default function Header() {
                   justifyContent="center"
                   color="blue"
                 >
-                  <a href={Resume} download={Resume} ><Button className="buttons">DOWNLOAD RESUME</Button></a>
-                  <a href="#Contact"><Button className="buttons contact">CONTACT ME</Button></a>
+                  <a href={Resume} download={Resume}>
+                    <Button className="buttons">DOWNLOAD RESUME</Button>
+                  </a>
+                  <a href="#Contact">
+                    <Button className="buttons contact">CONTACT ME</Button>
+                  </a>
                 </Stack>
               </Container>
             </Box>

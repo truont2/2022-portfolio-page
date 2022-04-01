@@ -1,32 +1,20 @@
-.content {
-    font-family: "Open Sans";
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: all 500ms ease-in-out;
-    transform: translate(0, 20px);
-    cursor: pointer;
+#Projects {
+  background: linear-gradient(35deg,#11cdef,#1171ef)!important;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
 
-    h1 {
-      font-size: 14px;
-      color: white;
-    }
-    
-    p {
-      font-size: 10px;
-      color: white;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-    }
-
-    &:hover {
-      opacity: 1;
-      transform: translate(0, 0px);
-    }
-  }
+#Projects:after {
+  background: white;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 10%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}

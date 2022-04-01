@@ -48,7 +48,7 @@ export default function StickyFooter() {
           <Typography
             variant="h3"
             align="center"
-            color="text.secondary"
+            color="inherit"
             paragraph
           >
             
@@ -58,7 +58,7 @@ export default function StickyFooter() {
           <Typography
             variant="h5"
             align="center"
-            color="text.secondary"
+            color="inherit"
             paragraph
           >
             Let's create your next experience together
@@ -110,17 +110,17 @@ export default function StickyFooter() {
             color="text.secondary"
             paragraph
           >
-            <a href="mailto:truont2@gmail.com">truont2@gmail.com</a>
+            <a className="footerLink" href="mailto:truont2@gmail.com">truont2@gmail.com</a>
           </Typography>
           <Typography
             variant="h6"
             align="center"
-            color="text.secondary"
+            color="inherit"
             paragraph
           >
             <span>
               Made With <icon>❤</icon> by{" "}
-              <a href="https://www.chetanverma.com/">Takara Truong</a>
+              <a className="footerLink" href="https://www.chetanverma.com/">Takara Truong</a>
             </span>
           </Typography>
         </Container>

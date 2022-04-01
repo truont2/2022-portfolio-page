@@ -11,7 +11,7 @@ import { styled } from "@mui/material/styles";
 import Tooltip from "@mui/material/Tooltip";
 import Stack from "@mui/material/Stack";
 import Fade from "react-reveal/Fade";
-import { IconButton } from "@mui/material";
+import { Container, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./skills.css";
 import data from "../../data";
@@ -28,16 +28,24 @@ export default function Skills() {
     }
   `;
   return (
-    <div>
+    <div id="Experiences">
       <CssBaseline />
       <div className="container">
         <Typography
-          variant="h2"
+          variant="text"
           align="center"
           color="text.secondary"
           paragraph
         >
-          Skills
+          What Skills I Have
+        </Typography>
+        <Typography
+          variant="h3"
+          align="center"
+          color="text.secondary"
+          paragraph
+        >
+          Experiences
         </Typography>
         <Fade right>
           <Grid
@@ -58,6 +66,7 @@ export default function Skills() {
               // </Grid>
             ))}
           </Grid>
+
           <Grid
             container
             direction="row"
@@ -66,11 +75,36 @@ export default function Skills() {
             className="About"
           >
             <Grid item xs={12} sm={4} md={4} container>
-              <Grid item xs container direction="column" spacing={2}>
-                <Grid item xs className="About">
-                  <Lott animationData={skillAnimation} size={500} />
-                </Grid>
+              <Grid item container direction="column">
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    color="black"
+                    paragraph
+                  >
+                    {data.skillOne}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    color="black"
+                    paragraph
+                  >
+                    {data.skillTwo}
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    color="black"
+                    paragraph
+                  >
+                    {data.skillThree}
+                  </Typography>
               </Grid>
+            </Grid>
+
+            <Grid item xs={12} sm={4} md={4}>
+              <Lott animationData={skillAnimation} size={500} />
             </Grid>
           </Grid>
         </Fade>

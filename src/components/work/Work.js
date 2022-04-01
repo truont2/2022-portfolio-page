@@ -14,17 +14,15 @@ const theme = createTheme();
 
 export default function Work() {
   return (
-    <container className="slanted-div" id="Projects">
-      <div className="container">
+    <container id="Projects">
+      <div className="container work">
         {/* Hero unit */}
-        <Typography
-          variant="h2"
-          align="center"
-          color="text.secondary"
-          paragraph
-        >
-          Projects
-        </Typography>
+        <Typography variant="text" align="center" color="inherit" paragraph>
+        My recent work
+      </Typography>
+      <Typography variant="h3" align="center" color="inherit" paragraph>
+        Projects
+      </Typography>
         <Container sx={{ py: 8 }} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={4}>

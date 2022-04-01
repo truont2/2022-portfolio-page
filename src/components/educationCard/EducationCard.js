@@ -5,6 +5,8 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { BiCheck } from "react-icons/bi";
+import './experienceCard.css'
 
 export default function BasicCard({ education, schoolName, subHeader, duration }) {
   return (
@@ -16,10 +18,13 @@ export default function BasicCard({ education, schoolName, subHeader, duration }
           {duration}
         </Typography>
         <p className="description mt-3">{education.desc}</p>
-        <ul>
+        <ul id="experienceList">
           {education.descBullets
-            ? education.descBullets.map((desc) => {
-                return <li key={desc}>{desc}</li>;
+            ? education.descBullets.map((desc, index) => {
+                return <li>
+                <BiCheck className="service__list-icon"></BiCheck><p>{desc}</p>
+                
+              </li>;
               })
             : null}
         </ul>

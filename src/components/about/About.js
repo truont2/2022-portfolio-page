@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import ButtonBase from "@mui/material/ButtonBase";
+import Button from "@mui/material/Button";
 import "./about.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -22,8 +22,11 @@ export default function ComplexGrid() {
   return (
     <div className="container" id="About">
       <CssBaseline />
-      <Typography variant="h2" align="center" color="text.secondary" paragraph>
-        About
+      <Typography variant="text" align="center" color="text.secondary" paragraph>
+        Get to know me
+      </Typography>
+      <Typography variant="h3" align="center" color="text.secondary" paragraph>
+        About Me
       </Typography>
       <Fade right>
         <Grid
@@ -39,17 +42,18 @@ export default function ComplexGrid() {
 
           <Grid item xs={12} sm={4} md={4} container>
             <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs className="About">
                 <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaOne}
                 </Typography>
                 <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaTwo}
                 </Typography>
-                <Typography variant="h6" align="center" color="black" paragraph>
+                {/* <Typography variant="h6" align="center" color="black" paragraph>
                   {data.aboutParaThree}
-                </Typography>
-              </Grid>
+                </Typography> */}
+                <a href="#Contact">
+                    <Button variant="outlined">CONTACT ME</Button>
+                  </a>
             </Grid>
           </Grid>
         </Grid>

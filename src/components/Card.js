@@ -17,7 +17,7 @@ export default function MultiActionAreaCard({
   project
 }) {
   return (
-    <Card sx={{ maxWidth: 345}}>
+    <Card sx={{ maxWidth: 345, margin: "0 auto"}} className="card">
       <CardActionArea onClick={() => (window.location.href = `${projectLink}`)}>
         <CardMedia
           component="img"
@@ -38,7 +38,7 @@ export default function MultiActionAreaCard({
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" onClick={() => (window.location.href = `${projectLink}`)}>Live</Button>
+        {project.url ? <Button size="small" onClick={() => (window.location.href = `${projectLink}`)}>Live</Button> : null}
         {project.github ? 
         <Button size="small" onClick={() => (window.location.href = `${project.github}`)}>Github</Button> :
       null

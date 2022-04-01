@@ -1,10 +1,11 @@
 .footer {
-    background: linear-gradient(35deg,#11cdef,#1171ef)!important;
+    background: linear-gradient(35deg,#11cdef,#1171ef);
+    color: white;
 }
 
 .footer-icon {
     background: white;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
     transition: 250ms ease-in-out;
 }
 
@@ -12,3 +13,8 @@
     transform: translateY(-10px);
     background: white;
 }
+
+.footerLink {
+    color:white;
+}
+
