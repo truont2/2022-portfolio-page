@@ -20,7 +20,7 @@ const theme = createTheme();
 
 export default function ComplexGrid() {
   return (
-    <div className="container">
+    <div className="container" id="About">
       <CssBaseline />
       <Typography variant="h2" align="center" color="text.secondary" paragraph>
         About
@@ -34,9 +34,7 @@ export default function ComplexGrid() {
           className="About"
         >
           <Grid item xs={12} sm={4} md={4}>
-            <ButtonBase sx={{ width: "100%", height: "100%" }}>
-              <img alt="complex" src={data.aboutImage} className="aboutImg" />
-            </ButtonBase>
+              <img alt="me" src={data.aboutImage} className="aboutImg" />
           </Grid>
 
           <Grid item xs={12} sm={4} md={4} container>

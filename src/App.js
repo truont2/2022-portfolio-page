@@ -7,6 +7,8 @@ import Work from "./components/work/Work";
 import Navbar from "./components/navbar/Navbar";
 import Education from './components/Education/Education'
 import { StyledEngineProvider } from "@mui/material/styles";
+import Contact from './components/Contact/Contact'
+
 function App() {
   return (
     <StyledEngineProvider injectFirst>
@@ -17,6 +19,7 @@ function App() {
         <About />
         <Education />
         <Skills />
+        <Contact />
         <Footer />
       </div>
     </StyledEngineProvider>

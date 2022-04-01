@@ -13,8 +13,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
-import Part from "../Particles";
-
+import Resume from "../../assets/Resume.pdf"
 
 import Lott from '../Lottie/Lottie.js'
 import codingAnimation from "../Lottie/coding.json";
@@ -24,7 +23,7 @@ const theme = createTheme();
 
 export default function Header() {
   return (
-    <div className="header-section work">
+    <div className="header-section work" id="Home">
       {/* <Part /> */}
       <CssBaseline />
       <div className="header container">
@@ -48,11 +47,10 @@ export default function Header() {
                     "Hi, My name is Takara Truong",
                     "I'm a Full Stack Developer",
                     "I Love Software Development",
-                    "Check out my Projects",
                   ]}
                   typeSpeed={150}
                   backSpeed={100}
-                  loop
+                  // loop
                 />
                 <Typography
                   variant="h5"
@@ -82,16 +80,23 @@ export default function Header() {
                     <FacebookIcon />
                   </IconButton>
                 </Stack>
-                <Button variant="contained" onClick={() => window.location.href = "https://drive.google.com/file/d/135RKqrj4_9NuncPE7WlKpOo05Fa7Zzbe/view?usp=sharing"}>SEE MY RESUME</Button>
+                <Stack
+                  sx={{ p: 4 }}
+                  direction="row"
+                  spacing={2}
+                  justifyContent="center"
+                  color="blue"
+                >
+                  <a href={Resume} download={Resume} ><Button className="buttons">DOWNLOAD RESUME</Button></a>
+                  <a href="#Contact"><Button className="buttons contact">CONTACT ME</Button></a>
+                </Stack>
               </Container>
             </Box>
           </Grid>
           <Grid item>
-            {/* <img src="https://assets4.lottiefiles.com/packages/lf20_iv4dsx3q.json" alt="guy coding" className="headerImg" /> */}
             <Lott animationData={codingAnimation} size={500} />
           </Grid>
         </Grid>
-        {/* Hero unit */}
       </div>
     </div>
   );

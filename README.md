@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 2022-portfolio-page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Description](#description)
+- [Authors](#authors)
+- [Github Link](#github-link)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test](#test)
+- [How to Contribute](#contribute)
+- [Resources](#resources)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Instead of having to manually enter your team information into a Excel sheet that can be easily lost or altered, you can use this application to store the data of your employees into a database using the Employee Tracker App. This program allows users to choose what they want to do then easily display or store the desired information into a sql database. The data is stored forever on the database and will not be lost unless completely deleted. Once the user has completed what they want to do, they can choose the exit option to exit from the application.
 
-### `npm start`
+THis project allowsed me to better understand sql and how to manipulate database data. I learned to then combine Inquirer to listen for user input and to then store that data into the database using SQL commands. The main issue I encountered while completing this project was fully understanding JOIN and how to implement that to get the desired data to display. Additionally, it took extra effort to understand how to connect SQL and inquirer since it was a new concept for me and I could not get user input to save. Once I understood this better, the project was easily completed since the user input could be saved. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In the future, I want to add more style to make the application more appealing to the eye because currently the only display is the main menu option. Adding a title with the cFonts package or ascii-art package would be a nice addition. Additionally I plan to add more options for users to choose from such as updating the employees manager, deleting roles, departments, and employees, or to view employees by department. 
+## Author 
+- Takara Truong
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Github Link
 
-### `npm test`
+* https://github.com/truont2/Employee-Tracker-App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used

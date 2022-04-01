@@ -12,9 +12,12 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import CssBaseline from "@mui/material/CssBaseline";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import HomeIcon from '@mui/icons-material/HomeOutlined';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenterOutlined';
+import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
+import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 import "./navbar.css";
 
 const ResponsiveAppBar = (props) => {
@@ -101,21 +104,39 @@ const ResponsiveAppBar = (props) => {
       <hr />
       <MenuItem>
         <IconButton size="large" aria-label="Github" color="inherit">
-          <GitHubIcon />
+          <HomeIcon />
         </IconButton>
-        <p>GitHub</p>
+        <p>Home</p>
       </MenuItem>
       <MenuItem>
         <IconButton size="large" aria-label="LinkedIn" color="inherit">
-          <LinkedInIcon />
+          <PersonOutlineIcon />
         </IconButton>
-        <p>LinkedIn</p>
+        <p>About Me</p>
       </MenuItem>
       <MenuItem>
         <IconButton size="large" aria-label="facebook" color="inherit">
-          <FacebookIcon />
+          <BusinessCenterIcon />
         </IconButton>
-        <p>Facebook</p>
+        <p>Experience</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton size="large" aria-label="facebook" color="inherit">
+          <FolderOpenOutlinedIcon />
+        </IconButton>
+        <p>Projects</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton size="large" aria-label="facebook" color="inherit">
+          <HandshakeOutlinedIcon />
+        </IconButton>
+        <p>Services</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton size="large" aria-label="facebook" color="inherit">
+          <ContactPhoneOutlinedIcon />
+        </IconButton>
+        <p>Contact</p>
       </MenuItem>
     </Menu>
   );
@@ -148,29 +169,65 @@ const ResponsiveAppBar = (props) => {
               {/* spacer */}
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} />
 
-              {/* icon section */}
+              {/* link section */}
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                <a href="#Home">
                 <IconButton
                   size="large"
-                  aria-label="github icon"
+                  aria-label="home icon"
                   color="inherit"
                 >
-                  <GitHubIcon />
+                  <HomeIcon />
                 </IconButton>
+                </a>
+                <a href="#About">
                 <IconButton
                   size="large"
-                  aria-label="linkedIn icon"
+                  aria-label="about icon"
                   color="inherit"
+                  onClick={() => window.href="#about"}
                 >
-                  <LinkedInIcon />
+                  <PersonOutlineIcon />
                 </IconButton>
+                </a>
+                
+                <a href="#Experience">
                 <IconButton
                   size="large"
-                  aria-label="facebook icon"
+                  aria-label="Experience icon"
                   color="inherit"
                 >
-                  <FacebookIcon />
+                  <BusinessCenterIcon />
                 </IconButton>
+                </a>
+                
+                <a href="#Projects">
+                <IconButton
+                  size="large"
+                  aria-label="work icon"
+                  color="inherit"
+                >
+                  <FolderOpenOutlinedIcon />
+                </IconButton>
+                </a>
+                <a href="#Services">
+                <IconButton
+                  size="large"
+                  aria-label="services icon"
+                  color="inherit"
+                >
+                  <HandshakeOutlinedIcon />
+                </IconButton>
+                </a>
+                <a href="#Contact">
+                <IconButton
+                  size="large"
+                  aria-label="Contact icon"
+                  color="inherit"
+                >
+                  <ContactPhoneOutlinedIcon />
+                </IconButton>
+                </a>
               </Box>
 
               {/* renders the 3 dots  */}

@@ -14,7 +14,7 @@ const theme = createTheme();
 
 export default function Work() {
   return (
-    <container className="slanted-div">
+    <container className="slanted-div" id="Projects">
       <div className="container">
         {/* Hero unit */}
         <Typography
@@ -48,34 +48,4 @@ export default function Work() {
       </div>
     </container>
   );
-}
-
-{
-  /* <Card
-                  sx={{height: '100%', display: 'flex', flexDirection: 'column' }}
-                  className="project"
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '0',
-                    }}
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card> */
 }

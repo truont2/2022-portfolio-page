@@ -36,4 +36,15 @@
   z-index: -1;
 }
 
+.buttons {
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  background: none;
+}
+
+.buttons:hover {
+  background: white;
+  color: rgb(82, 82, 82);
+}
 

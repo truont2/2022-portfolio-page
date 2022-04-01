@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Courgette&family=Lobster&family=Noto+Sans&display=swap");
 
 .mobile-nav {
-  background: linear-gradient(35deg,#11cdef,#1171ef);
   display: flex;
   justify-content: space-between;
 }
 .navbar {
+  background: linear-gradient(35deg, #8ac9d4,#1171ef);
   display: flex;
   justify-content: space-between;
 }
