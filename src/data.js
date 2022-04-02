@@ -84,7 +84,7 @@ export default {
     },
     {
       title: "Social Media API", //Project Title - Add Your Project Title Here
-      para: "Discord Bot", // Add Your Service Type Here
+      para: "Social media back end features", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools:
         "Tools used - JavaScript, Node.js, MongoDB>, Express.js, Mongoose",
