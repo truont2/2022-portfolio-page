@@ -18,12 +18,12 @@ export default function BasicCard({ education, schoolName, subHeader, duration }
           {duration}
         </Typography>
         <p className="description mt-3">{education.desc}</p>
-        <ul id="experienceList">
+        <ul id="experiences">
           {education.descBullets
             ? education.descBullets.map((desc, index) => {
                 return <li>
-                <BiCheck className="service__list-icon"></BiCheck><p>{desc}</p>
-                
+                <BiCheck className="service__list-icon"></BiCheck>
+                <p>{desc}</p>
               </li>;
               })
             : null}

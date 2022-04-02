@@ -6,7 +6,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import data from "../../data";
-import EducationCard from "../educationCard/EducationCard";
+import Experiences from "../ExperienceCard/experienceCard";
 import "./experiences.css";
 import Fade from "react-reveal/Fade";
 import Container from '@mui/material/Container'
@@ -30,7 +30,7 @@ export default function ComplexGrid() {
           alignItems="center">
             {data.education.map((school, index) => (
               <Grid item key={index} xs={12} sm={6} md={6}>
-                <EducationCard
+                <Experiences
                 key={index}
                 education={school}
                 schoolName={school.schoolName}

@@ -14,6 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import Resume from "../../assets/Resume.pdf";
+import Navbar from '../navbar/Navbar'
 
 import Lott from "../Lottie/Lottie.js";
 import codingAnimation from "../Lottie/coding.json";
@@ -25,6 +26,7 @@ export default function Header() {
     <div className="header-section work" id="Home">
       {/* <Part /> */}
       <CssBaseline />
+      <Navbar />
       <div className="header container">
         <Grid
           container

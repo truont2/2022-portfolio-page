@@ -32,7 +32,7 @@ const ResponsiveAppBar = (props) => {
     const trigger = useScrollTrigger({
       target: window ? window() : undefined,
     });
-
+    
     return (
       <Slide appear={false} direction="down" in={!trigger}>
         {children}
@@ -40,24 +40,7 @@ const ResponsiveAppBar = (props) => {
     );
   }
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
 
   const mobileMenuId = "primary-search-account-menu-mobile";
 
@@ -135,7 +118,7 @@ const ResponsiveAppBar = (props) => {
 
   // change the nav bar to scroll to the section on interest
   return (
-    <React.Fragment className="navbar">
+    <React.Fragment >
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar className="navbar">

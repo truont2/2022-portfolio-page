@@ -15,7 +15,7 @@ function App() {
     <StyledEngineProvider injectFirst>
       <CssBaseline />
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         <Header />
         <About />
         <Skills />

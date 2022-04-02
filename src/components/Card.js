@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { Link } from "react-router-dom";
 import image from "../images/neighbors.jpg";
+import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 
 export default function MultiActionAreaCard({
   key,
@@ -14,36 +16,63 @@ export default function MultiActionAreaCard({
   imgUrl,
   projectLink,
   tools,
-  project
+  project,
 }) {
   return (
-    <Card sx={{ maxWidth: 345, margin: "0 auto"}} className="card">
-      <CardActionArea onClick={() => (window.location.href = `${projectLink}`)}>
-        <CardMedia
-          component="img"
-          height="140"
-          image={imgUrl}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {heading}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {paragraph}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {tools}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        {project.url ? <Button size="small" onClick={() => (window.location.href = `${projectLink}`)}>Live</Button> : null}
-        {project.github ? 
-        <Button size="small" onClick={() => (window.location.href = `${project.github}`)}>Github</Button> :
-      null
-      }
-      </CardActions>
+    <Card
+      sx={{ maxWidth: 360, minHeight: 400, margin: "0 auto" }}
+      className="card"
+      square
+      elevation={4}
+    >
+      <CardMedia
+        component="img"
+        height="200"
+        image={imgUrl}
+        alt="project image"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {heading}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {paragraph}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {tools}
+        </Typography>
+        <div className="projectButton">
+        {project.url ? (
+          <Button
+            size="small"
+            onClick={() => (window.location.href = `${projectLink}`)}
+          >
+            Live
+          </Button>
+        ) : null}
+        {project.github ? (
+          <Button
+            size="small"
+            onClick={() => (window.location.href = `${project.github}`)}
+          >
+            Github
+          </Button>
+        ) : null}
+        </div>
+      </CardContent>
     </Card>
+    // <Box
+    //   sx={{
+    //     display: 'flex',
+    //     flexWrap: 'wrap',
+    //     '& > :not(style)': {
+    //       m: 1,
+    //       width: "100%",
+    //       height: 350,
+    //     },
+    //   }}
+    // >
+    //   <Paper elevation={3} />
+    // </Box>
   );
 }

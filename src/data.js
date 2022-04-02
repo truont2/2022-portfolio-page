@@ -83,7 +83,7 @@ export default {
       github: "https://github.com/truont2/mini-shopify",
     },
     {
-      title: "Discord Bot", //Project Title - Add Your Project Title Here
+      title: "Social Media API", //Project Title - Add Your Project Title Here
       para: "Discord Bot", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools:

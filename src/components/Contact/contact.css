@@ -18,11 +18,13 @@
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  color: whitesmoke;
 }
 
 .contact__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+  color: var(--color-dark)
 }
 
 .contact__option-icon {
