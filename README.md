@@ -10,3 +10,8 @@ My react portfolio page!
 
 
 ## Technologies Used
+- react reveal
+- Material UI
+- React
+- React Typed
+- React Lottie
