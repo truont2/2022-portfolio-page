@@ -6,11 +6,12 @@
 }
 
 .navbar {
-  background: transparent;
+  background-color: inherit;
   box-shadow: none;
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(15px);
+  transition: var(--transition);
 }
 
 .navbarContainer {

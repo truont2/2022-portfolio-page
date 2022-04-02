@@ -122,13 +122,20 @@ export default {
     {
       schoolName: "Web Development",
       descBullets: [
-        "Relavent courses: CSE 142(Intro to Java) and CSE 160 (Data Programming: Python)",
+        "Knowledge of JavaScript, HTML, and CSS",
+        "RESTful API",
+        "Experience working with Databases such as SQL and MongoDB",
+        "Experience with ReactJS",
+        "Smart, quick-learner, and likes to work on challenging problems",
       ],
     },
     {
       schoolName: "Fun Facts",
       descBullets: [
-        "Relavent courses: CSE 142(Intro to Java) and CSE 160 (Data Programming: Python)",
+        "Tennis and swimming are my favorite sports",
+        "My favorite game is Apex Legends",
+        "I enjoy making Gundam Models",
+        ""
       ],
     },
   ],

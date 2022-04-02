@@ -10,7 +10,7 @@ import './experienceCard.css'
 
 export default function BasicCard({ education, schoolName, subHeader, duration }) {
   return (
-    <Card sx={{ minWidth: 275 }} className="educationCard">
+    <Card sx={{ minWidth: 275 }} className="educationCard" elevation={4}>
       <CardContent>
         <Typography sx={{ fontSize: 20, color: "#11cdef" }}>{schoolName}</Typography>
         <Typography component="div">{subHeader}</Typography>

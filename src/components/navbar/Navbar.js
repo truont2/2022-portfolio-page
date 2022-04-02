@@ -34,87 +34,12 @@ const ResponsiveAppBar = (props) => {
     });
     
     return (
+
       <Slide appear={false} direction="down" in={!trigger}>
         {children}
       </Slide>
     );
   }
-
-
-
-  const mobileMenuId = "primary-search-account-menu-mobile";
-
-  // const renderMobileMenu = (
-  //   <Menu
-  //     anchorEl={mobileMoreAnchorEl}
-  //     anchorOrigin={{
-  //       vertical: "top",
-  //       horizontal: "right",
-  //     }}
-  //     id={mobileMenuId}
-  //     keepMounted
-  //     transformOrigin={{
-  //       vertical: "top",
-  //       horizontal: "right",
-  //     }}
-  //     open={isMobileMenuOpen}
-  //     onClose={handleMobileMenuClose}
-  //     className="mobile-nav"
-  //   >
-  //     <Typography variant="h6" noWrap component="div" className="h2">
-  //       Takara Truong
-  //     </Typography>
-  //     <hr />
-  //     <a href="#Home">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="Github" color="inherit">
-  //           <HomeIcon />
-  //         </IconButton>
-  //         <p>Home</p>
-  //       </MenuItem>
-  //     </a>
-  //     <a href="#About">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="LinkedIn" color="inherit">
-  //           <PersonOutlineIcon />
-  //         </IconButton>
-  //         <p>About Me</p>
-  //       </MenuItem>
-  //     </a>
-  //     <a href="#Experiences">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="facebook" color="inherit">
-  //           <BusinessCenterIcon />
-  //         </IconButton>
-  //         <p>Experience</p>
-  //       </MenuItem>
-  //     </a>
-  //     <a href="#Services">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="facebook" color="inherit">
-  //           <HandshakeOutlinedIcon />
-  //         </IconButton>
-  //         <p>Services</p>
-  //       </MenuItem>
-  //     </a>
-  //     <a href="#Projects">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="facebook" color="inherit">
-  //           <FolderOpenOutlinedIcon />
-  //         </IconButton>
-  //         <p>Projects</p>
-  //       </MenuItem>
-  //     </a>
-  //     <a href="#Contact">
-  //       <MenuItem>
-  //         <IconButton size="large" aria-label="facebook" color="inherit">
-  //           <ContactPhoneOutlinedIcon />
-  //         </IconButton>
-  //         <p>Contact</p>
-  //       </MenuItem>
-  //     </a>
-  //   </Menu>
-  // );
 
   // change the nav bar to scroll to the section on interest
   return (
