@@ -33,14 +33,6 @@ export default function Contact() {
 
   return (
     <section id="Contact">
-      <Typography
-          variant="text"
-          align="center"
-          color="text.secondary"
-          paragraph
-        >
-          Get in touch
-        </Typography>
         <Typography
           variant="h3"
           align="center"

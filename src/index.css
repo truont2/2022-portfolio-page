@@ -24,8 +24,10 @@ a {
 }
 
 :root {
+  --gradient:  linear-gradient(35deg,#11cdef,#1171ef);
+  --text: rgba(0, 0, 0, 0.6);
   --color-bg: #1f1f38;
-  --color-bg-variant: #9090e9;
+  --color-bg-variant: #1171ef;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77,181,255,.4);
   --color-white: #fff;

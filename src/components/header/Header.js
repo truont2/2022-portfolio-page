@@ -43,25 +43,29 @@ export default function Header() {
               }}
             >
               <Container maxWidth="sm" className="header-text">
-                <Typed
-                  strings={[
-                    "Hi, My name is Takara Truong",
-                    "I'm a Full Stack Developer",
-                    "I Love Software Development",
-                  ]}
-                  typeSpeed={150}
-                  backSpeed={100}
-                  loop
-                />
-                <Typography
-                  variant="h5"
+              <Typography
+                  variant="h4"
                   align="center"
                   color="inherit"
                   paragraph
                 >
-                  A passionate Full Stack Web Developer having an experience of
-                  building Web applications with JavaScript / Reactjs / Nodejs /
-                  SQL and some other cool libraries.
+                  Hello, I am
+                </Typography>
+                <Typography
+                  variant="h2"
+                  align="center"
+                  color="inherit"
+                  paragraph
+                >
+                  Takara Truong
+                </Typography>
+                <Typography
+                  variant="p"
+                  align="center"
+                  color="inherit"
+                  paragraph
+                >
+                  Fullstack Developer
                 </Typography>
                 <Stack
                   sx={{ p: 4 }}
@@ -86,15 +90,6 @@ export default function Header() {
                       aria-label="Github"
                     >
                       <LinkedInIcon />
-                    </IconButton>
-                  </a>
-                  <a href="https://www.facebook.com/takara.truong.58" target="_blank">
-                    <IconButton
-                      className="icon"
-                      size="large"
-                      aria-label="Github"
-                    >
-                      <FacebookIcon />
                     </IconButton>
                   </a>
                 </Stack>

@@ -1,30 +1,11 @@
-import neighbors from "./images/neighbors.jpg";
-import plane from "./images/airplane.jpg";
-import anime from "./images/anime.jpg";
+import neighbors from "./images/ftchr.png";
+import plane from "./images/skyfall.PNG";
+import anime from "./images/anime.png";
 import user from "./images/me.jpg";
+import social from "./images/socialmedia.jpg"
+import ecommerce from "./images/ecommerce.jpg"
 
 export default {
-  //(Please Do Not Remove The comma(,) after every variable)
-  //Change The Website Template
-
-  //   Header Details ---------------------
-  name: "chetan",
-  headerTagline: [
-    //Line 1 For Header
-    "Building digital",
-    //Line 2 For Header
-    "products, brands,",
-    //Line 3 For Header
-    "and experience",
-  ],
-  //   Header Paragraph
-  headerParagraph:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
-
-  //Contact Email
-  contactEmail: "hello@chetanverma.com",
-
-  // End Header Details -----------------------
 
   // Work Section ------------------------
   projects: [
@@ -33,7 +14,7 @@ export default {
       para: "Pet Social Media Application", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools:
-        "Tools used - React, Sequelize, Socket.io, CSS, Axios, Material UI, React Leaflet, Mapbox, Cloudinary",
+        "Tools used - React, Sequelize, Socket.IO, CSS, Axios, Material UI, React Leaflet, Mapbox, Cloudinary",
       imageSrc: neighbors,
       //Project URL - Add Your Project Url Here
       url: "https://ftchrapp.herokuapp.com/",
@@ -52,7 +33,7 @@ export default {
     },
     {
       title: "What's that Anime?", //Project Title - Add Your Project Title Here
-      para: "Image analysis application",
+      para: "Anime image analyzer application",
       tools: "Tools Used - HTML, CSS, JavaScript, Foundation",
       // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
@@ -63,10 +44,10 @@ export default {
     },
     {
       title: "Team Profile Generator", //Project Title - Add Your Project Title Here
-      para: "Team Wesbite Generator", // Add Your Service Type Here
+      para: "Generate a HTML website of your team members", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools:
-        "Tools used - JavaScript, Node.js, MySQL, Express.js, Materialize, Chart.js, Axios",
+        "Tools used - JavaScript, Node.js, Express.js, Inquirer",
       imageSrc: anime,
       //Project URL - Add Your Project Url Here
       github: "https://github.com/truont2/Team-Profile-Page-Generator",
@@ -77,8 +58,7 @@ export default {
       //Project Image - Add Your Project Image Here
       tools:
         "Tools used - JavaScript, Node.js, MySQL, Express.js",
-      imageSrc:
-        "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      imageSrc: ecommerce,
       //Project URL - Add Your Project Url Here
       github: "https://github.com/truont2/mini-shopify",
     },
@@ -87,32 +67,20 @@ export default {
       para: "Social media back end features", // Add Your Service Type Here
       //Project Image - Add Your Project Image Here
       tools:
-        "Tools used - JavaScript, Node.js, MongoDB>, Express.js, Mongoose",
-      imageSrc:
-        "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
+        "Tools used - JavaScript, Node.js, MongoDB, Express.js, Mongoose",
+      imageSrc: social,
       //Project URL - Add Your Project Url Here
-      url: "https://andrewtranmsw.github.io/whatsThatAnime/",
-      github: "https://github.com/AndrewTranMSW/whatsThatAnime",
+      github: "https://github.com/truont2/Social-Media-API",
     },
-
-    /*
-    If You Want To Add More Project just Copy and Paste This At The End
-    ,{
-        title: 'Project Five',
-        para: 'Something Amazing',
-        imageSrc: "",
-        url: ''
-    }
-    */
   ],
 
   // End Work Section -----------------------
 
   // About Secton --------------
   aboutParaOne:
-    "Aspiring Full-Stack Developer. Recent graduate from the University of Washington majoring in Biochemistry. Motivated to take on new challenges and to become a software developer in the future and develop exciting and innovative applications for users.",
+    "Full Stack Developer with a background in Biochemistry. Motivated to take on new challenges and develop exciting and innovative applications for users.",
   aboutParaTwo:
-    "In my spare time, I like to play tennis, exercise, play computer games, and build Gundam models.",
+    "In my spare time, I like to play tennis, play computer games, and build Gundam models.",
   aboutImage: user,
 
   //   End About Section ---------------------
@@ -122,20 +90,12 @@ export default {
     {
       schoolName: "Web Development",
       descBullets: [
-        "Knowledge of JavaScript, HTML, and CSS",
+        "Strong Foundation in JavaScript, HTML, and CSS",
         "RESTful API",
-        "Experience working with Databases such as SQL and MongoDB",
+        "Backend experience working with databases such as SQL and MongoDB",
         "Experience with ReactJS",
-        "Smart, quick-learner, and likes to work on challenging problems",
-      ],
-    },
-    {
-      schoolName: "Fun Facts",
-      descBullets: [
-        "Tennis and swimming are my favorite sports",
-        "My favorite game is Apex Legends",
-        "I enjoy making Gundam Models",
-        ""
+        "Beginner level Java and Python",
+        "Passionate, quick-learner, and likes to work on challenging problems",
       ],
     },
   ],
@@ -166,16 +126,12 @@ export default {
       fontAwesomeClassname: "logos:nodejs-icon",
     },
     {
-      para: "SQL-database",
+      para: "SQL",
       fontAwesomeClassname: "vscode-icons:file-type-sql",
     },
     {
       para: "MongoDB",
       fontAwesomeClassname: "vscode-icons:file-type-mongo",
-    },
-    {
-      para: "AWS",
-      fontAwesomeClassname: "logos:aws",
     },
     {
       para: "Java",
@@ -200,40 +156,12 @@ export default {
   ],
 
   skillOne:
-    "Develop Highly interactive and appealing web applications",
+    "Experience building web applications with Front-End and Back-End technologies such as JavaScript, Reactjs, Nodejs, SQL and more.",
   skillTwo:
-    "Well-versed in various web development tools such as HTML/CSS, Javascript, MySQL, Express.js, and React.",
+    "Passionate, quick-learner, and likes to work on challenging problems",
   skillThree: "Currently learning AWS",
   aboutImage: user,
 
   // End Skills Section --------------------------
 
-  //   Promotion Section --------------------------
-
-  promotionHeading: "Heading",
-  promotionPara:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  // End Promotion Section -----------------
-
-  //   Contact Section --------------
-
-  contactSubHeading: "Let's create your next experience together",
-  // social: [
-  //   // Add Or Remove The Link Accordingly
-  //   { img: githubIcon, url: "https://github.com/chetanverma16" },
-  //   {
-  //     img: codepenIcon,
-  //     url: "https://www.codepen.com/",
-  //   },
-  //   {
-  //     img: dribbbleIcon,
-  //     url: "https://dribbble.com/chetanverma",
-  //   },
-  //   {
-  //     img: instagramIcon,
-  //     url: "https://www.instagram.com/",
-  //   },
-  // ],
-
-  // End Contact Section ---------------
 };

@@ -1,3 +1,13 @@
+.skillStack {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 425px) {
+    .skillStack {
+        margin-bottom: 50px;
+    }
+}
+
 .icon {
     transition: 250ms ease-in-out;
     background: white;
@@ -5,6 +15,13 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 425px){
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .icon:hover {

@@ -48,7 +48,7 @@ const ResponsiveAppBar = (props) => {
       <HideOnScroll {...props}>
         <AppBar className="navbar">
           <Container maxWidth="lg">
-            <Toolbar disableGutters>
+            <Toolbar disableGutters className="navLinks">
               <Typography
                 variant="h6"
                 noWrap
@@ -63,7 +63,7 @@ const ResponsiveAppBar = (props) => {
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} />
 
               {/* link section */}
-              <Box sx={{ display: { xs: "flex", md: "flex" } }}>
+              <Box sx={{  display: { xs: "flex", md: "flex" } }}>
                 <a href="#Home">
                   <IconButton
                     size="large"

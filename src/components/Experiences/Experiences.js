@@ -16,10 +16,10 @@ export default function ComplexGrid() {
     <div className="container education" id="Services">
       <CssBaseline />
       <Typography variant="text" align="center" color="text.secondary" paragraph>
-        What skills I have
+        What I offer
       </Typography>
       <Typography variant="h3" align="center" color="text.secondary" paragraph>
-        Experiences
+        Services
       </Typography>
 
       <Fade left>

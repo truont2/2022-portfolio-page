@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./work.css";
-import Proj from "../Card";
+import Proj from "./Card";
 import data from "../../data";
 import Fade from "react-reveal/Fade";
 
@@ -17,9 +17,6 @@ export default function Work() {
     <container id="Projects">
       <div className="container work">
         {/* Hero unit */}
-        <Typography variant="text" align="center" color="inherit" paragraph>
-        My recent work
-      </Typography>
       <Typography variant="h3" align="center" color="inherit" paragraph>
         Projects
       </Typography>

@@ -32,30 +32,24 @@ export default function Skills() {
       <CssBaseline />
       <div className="container">
         <Typography
-          variant="text"
-          align="center"
-          color="text.secondary"
-          paragraph
-        >
-          What Skills I Have
-        </Typography>
-        <Typography
           variant="h3"
           align="center"
           color="text.secondary"
           paragraph
         >
-          Experiences
+          Skills
         </Typography>
+
+
         <Fade right>
           <Grid
             container
             direction="row"
             justifyContent="center"
             alignItems="center"
+            className="skillStack"
           >
             {data.skills.map((skill, index) => (
-              // <Grid item xs={2} sm={4} md={1} key={index}>
               <StyledTooltip title={skill.para}>
                 <Icon
                   icon={skill.fontAwesomeClassname}
@@ -63,7 +57,6 @@ export default function Skills() {
                   className="icon skill-icon"
                 ></Icon>
               </StyledTooltip>
-              // </Grid>
             ))}
           </Grid>
 
@@ -72,14 +65,13 @@ export default function Skills() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            className="About"
           >
             <Grid item xs={12} sm={4} md={4} container>
               <Grid item container direction="column">
                   <Typography
                     variant="h6"
                     align="center"
-                    color="black"
+                    color="text.secondary"
                     paragraph
                   >
                     {data.skillOne}
@@ -87,7 +79,7 @@ export default function Skills() {
                   <Typography
                     variant="h6"
                     align="center"
-                    color="black"
+                    color="text.secondary"
                     paragraph
                   >
                     {data.skillTwo}
@@ -95,7 +87,7 @@ export default function Skills() {
                   <Typography
                     variant="h6"
                     align="center"
-                    color="black"
+                    color="text.secondary"
                     paragraph
                   >
                     {data.skillThree}

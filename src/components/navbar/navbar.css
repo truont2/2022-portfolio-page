@@ -6,12 +6,13 @@
 }
 
 .navbar {
-  background-color: inherit;
+  background: transparent;
   box-shadow: none;
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(15px);
   transition: var(--transition);
+  color: whitesmoke;
 }
 
 .navbarContainer {
@@ -35,4 +36,12 @@
 
 .MuiMenu-list{
     width: 90vw;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    display: flex;
+    justify-content: center;
+  }
 }

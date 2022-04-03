@@ -12,7 +12,7 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  background: var(--gradient);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -24,7 +24,7 @@
 .contact__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  color: var(--color-dark)
+  color: var(--text);
 }
 
 .contact__option-icon {
@@ -54,7 +54,7 @@ textarea {
   background: transparent;
   border: 2px solid var(--color-primary-variant);
   resize: none;
-  color: var(--color-white);
+  color: var(--color-bg);
 }
 
 /* Medium Devices */

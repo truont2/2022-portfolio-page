@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { Link } from "react-router-dom";
-import image from "../images/neighbors.jpg";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 
@@ -32,16 +31,7 @@ export default function MultiActionAreaCard({
         alt="project image"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {heading}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {paragraph}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {tools}
-        </Typography>
-        <div className="projectButton">
+      <div className="projectButton">
         {project.url ? (
           <Button
             size="small"
@@ -59,20 +49,16 @@ export default function MultiActionAreaCard({
           </Button>
         ) : null}
         </div>
+        <Typography gutterBottom variant="h5" component="div">
+          {heading}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {paragraph}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {tools}
+        </Typography>
       </CardContent>
     </Card>
-    // <Box
-    //   sx={{
-    //     display: 'flex',
-    //     flexWrap: 'wrap',
-    //     '& > :not(style)': {
-    //       m: 1,
-    //       width: "100%",
-    //       height: 350,
-    //     },
-    //   }}
-    // >
-    //   <Paper elevation={3} />
-    // </Box>
   );
 }

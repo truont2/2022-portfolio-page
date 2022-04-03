@@ -22,8 +22,8 @@ export default function BasicCard({ education, schoolName, subHeader, duration }
           {education.descBullets
             ? education.descBullets.map((desc, index) => {
                 return <li>
-                <BiCheck className="service__list-icon"></BiCheck>
-                <p>{desc}</p>
+                {/* <BiCheck className="service__list-icon"></BiCheck> */}
+                {desc}
               </li>;
               })
             : null}

@@ -91,18 +91,6 @@ export default function StickyFooter() {
             >
               <LinkedInIcon />
             </IconButton>
-            <IconButton
-              size="large"
-              aria-label="Github"
-              color="inherit"
-              className="footer-icon"
-              onClick={() =>
-                (window.location.href =
-                  "https://www.facebook.com/takara.truong.58")
-              }
-            >
-              <FacebookIcon />
-            </IconButton>
           </Stack>
           <Typography
             variant="h6"
