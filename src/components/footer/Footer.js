@@ -5,12 +5,21 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import { Button, Stack } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./footer.css";
 import Fade from "react-reveal/Fade";
+
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: "3rem",
+  "@media (max-width:425px)": {
+    fontSize: "2rem",
+  },
+};
 
 function Copyright() {
   return (
@@ -44,25 +53,12 @@ export default function StickyFooter() {
         }}
       >
         <Container maxWidth="sm">
-        <Fade bottom cascade>
-          <Typography
-            variant="h3"
-            align="center"
-            color="inherit"
-            paragraph
-          >
-            
-              Reach out to me!
-
-          </Typography>
-          <Typography
-            variant="h5"
-            align="center"
-            color="inherit"
-            paragraph
-          >
-            Let's create your next experience together
-          </Typography>
+          <Fade bottom cascade>
+            <ThemeProvider theme={theme}>
+              <Typography variant="h3" align="center" color="inherit" paragraph>
+                Reach out to me!
+              </Typography>
+            </ThemeProvider>
           </Fade>
           <Stack
             sx={{ p: 4 }}
@@ -98,17 +94,14 @@ export default function StickyFooter() {
             color="text.secondary"
             paragraph
           >
-            <a className="footerLink" href="mailto:truont2@gmail.com">truont2@gmail.com</a>
+            <a className="footerLink" href="mailto:truont2@gmail.com">
+              truont2@gmail.com
+            </a>
           </Typography>
-          <Typography
-            variant="h6"
-            align="center"
-            color="inherit"
-            paragraph
-          >
+          <Typography variant="h6" align="center" color="inherit" paragraph>
             <span>
               Made With <icon>❤</icon> by{" "}
-              <a className="footerLink" href="https://www.chetanverma.com/">Takara Truong</a>
+                Takara Truong
             </span>
           </Typography>
         </Container>

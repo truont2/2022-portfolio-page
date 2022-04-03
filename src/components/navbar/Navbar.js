@@ -103,15 +103,6 @@ const ResponsiveAppBar = (props) => {
                     <FolderOpenOutlinedIcon />
                   </IconButton>
                 </a>
-                <a href="#Services">
-                  <IconButton
-                    size="large"
-                    aria-label="services icon"
-                    color="inherit"
-                  >
-                    <HandshakeOutlinedIcon />
-                  </IconButton>
-                </a>
                 <a href="#Contact">
                   <IconButton
                     size="large"

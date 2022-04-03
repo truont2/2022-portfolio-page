@@ -10,7 +10,6 @@ import Grid from "@mui/material/Grid";
 import "./header.css";
 import Typed from "react-typed";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import Resume from "../../assets/Resume.pdf";
@@ -20,6 +19,19 @@ import Lott from "../Lottie/Lottie.js";
 import codingAnimation from "../Lottie/coding.json";
 
 const theme = createTheme();
+
+theme.typography.h2 = {
+  fontSize: '3.75rem',
+  '@media (max-width:425px)': {
+    fontSize: '2.5rem',
+  },
+};
+theme.typography.h4 = {
+  fontSize: '2.125rem',
+  '@media (max-width: 425px)': {
+    fontSize: '1.75rem',
+  },
+};
 
 export default function Header() {
   return (
@@ -43,19 +55,22 @@ export default function Header() {
               }}
             >
               <Container maxWidth="sm" className="header-text">
+              <ThemeProvider theme={theme}>
               <Typography
                   variant="h4"
                   align="center"
                   color="inherit"
                   paragraph
+                  className="headerIntro"
                 >
-                  Hello, I am
+                  Hello, I'm
                 </Typography>
                 <Typography
                   variant="h2"
                   align="center"
                   color="inherit"
                   paragraph
+                  className="headerName"
                 >
                   Takara Truong
                 </Typography>
@@ -67,6 +82,7 @@ export default function Header() {
                 >
                   Fullstack Developer
                 </Typography>
+              </ThemeProvider>
                 <Stack
                   sx={{ p: 4 }}
                   direction="row"
