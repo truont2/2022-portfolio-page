@@ -1,13 +1,12 @@
 # 2022-portfolio-page
 ## Description
-My react portfolio page!
+My portfolio page built using React and Material UI !
 ## Author 
 - Takara Truong
 
-## Github Link
+## Deployed Link
 
-* https://github.com/truont2/2022-portfolio-page
-
+* takaratruong.me
 
 ## Technologies Used
 - react reveal
