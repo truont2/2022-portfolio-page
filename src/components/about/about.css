@@ -10,8 +10,9 @@
     color: black
 }
 
-.button {
-    background-color: red;
+.button:hover {
+    background: var(--color-bg-variant);
+    color: var(--color-white);
 }
 
 @media screen and (max-width: 425px) {

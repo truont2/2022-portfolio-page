@@ -36,6 +36,7 @@ export default function MultiActionAreaCard({
           <Button
             size="small"
             onClick={() => (window.location.href = `${projectLink}`)}
+            className="button"
           >
             Live
           </Button>
@@ -44,6 +45,7 @@ export default function MultiActionAreaCard({
           <Button
             size="small"
             onClick={() => (window.location.href = `${project.github}`)}
+            className="button"
           >
             Github
           </Button>

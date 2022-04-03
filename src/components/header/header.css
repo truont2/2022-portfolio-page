@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.icon {
+  color: var(--color-bg-variant)
+}
+
 
 .header, .About {
   color: #fff;

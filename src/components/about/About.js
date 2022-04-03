@@ -46,8 +46,8 @@ export default function ComplexGrid() {
                   {data.aboutParaTwo}
                 </Typography>
                 <a href="#Contact">
-                    <Button variant="outlined">CONTACT ME</Button>
-                  </a>
+                    <Button className="button" variant="outlined">CONTACT ME</Button>
+                </a>
             </Grid>
           </Grid>
         </Grid>

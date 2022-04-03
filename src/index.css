@@ -36,7 +36,7 @@ a {
   --color-bg-variant: #1171ef;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77,181,255,.4);
-  --color-white: #fff;
+  --color-white: white;
   --color-light: rgba(187, 181, 181, 0.6);
   --color-dark: rgba(54, 53, 53, 0.6);
   --transition: all 400ms ease;

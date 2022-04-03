@@ -65,7 +65,6 @@ export default function StickyFooter() {
             direction="row"
             spacing={2}
             justifyContent="center"
-            color="blue"
           >
             <IconButton
               size="large"

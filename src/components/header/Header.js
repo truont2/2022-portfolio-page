@@ -88,7 +88,6 @@ export default function Header() {
                   direction="row"
                   spacing={2}
                   justifyContent="center"
-                  color="blue"
                 >
                   <a href="https://github.com/truont2" target="_blank">
                     <IconButton
