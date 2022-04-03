@@ -106,11 +106,11 @@ export default {
 
   skills: [
     {
-      para: "HTML-5",
+      para: "HTML5",
       fontAwesomeClassname: "vscode-icons:file-type-html",
     },
     {
-      para: "CSS3",
+      para: "CSS",
       fontAwesomeClassname: "vscode-icons:file-type-css",
     },
     {
