@@ -25,7 +25,7 @@ export default function ComplexGrid() {
       <Typography variant="h3" align="center" color="text.secondary" paragraph>
         About Me
       </Typography>
-      <Fade right>
+      <Fade left>
         <Grid
           container
           direction="row"
