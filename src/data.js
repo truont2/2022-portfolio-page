@@ -4,6 +4,7 @@ import anime from "./images/anime.png";
 import user from "./images/me.jpg";
 import social from "./images/socialmedia.jpg"
 import ecommerce from "./images/ecommerce.jpg"
+import team from './images/team.jpg'
 
 export default {
 
@@ -48,7 +49,7 @@ export default {
       //Project Image - Add Your Project Image Here
       tools:
         "Tools used - JavaScript, Node.js, Express.js, Inquirer",
-      imageSrc: anime,
+      imageSrc: team,
       //Project URL - Add Your Project Url Here
       github: "https://github.com/truont2/Team-Profile-Page-Generator",
     },
