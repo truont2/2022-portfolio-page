@@ -9,15 +9,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import data from "../../data";
 import Fade from "react-reveal/Fade";
 
-const Img = styled("img")({
-  margin: "auto",
-  display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%",
-});
-
-const theme = createTheme();
-
 export default function ComplexGrid() {
   return (
     <div id="About">

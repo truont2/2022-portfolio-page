@@ -21,14 +21,14 @@
   font-size: xx-large;
 }
 
-.work {
+.angledBackground {
   background: linear-gradient(35deg,#11cdef,#1171ef)!important;
   color: #fff;
   position: relative;
   z-index: 1;
 }
 
-.work:after {
+.angledBackground:after {
   background: white;
   bottom: 0;
   content: '';

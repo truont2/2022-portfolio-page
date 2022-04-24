@@ -1,24 +1,3 @@
-#Projects {
-  background: linear-gradient(35deg,#11cdef,#1171ef)!important;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-#Projects:after {
-  background: white;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 10%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(-1.5deg);
-  transform-origin: 100%;
-  z-index: -1;
-}
-
 .card {
   transition: 250ms ease-in-out;
 }

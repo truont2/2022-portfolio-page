@@ -49,7 +49,7 @@ const ResponsiveAppBar = (props) => {
   };
 
   return (
-    <>
+    <div id="navbar" >
       <CssBaseline />
       {/* <HideOnScroll> */}
         {/* className={!trigger ? "navbar" : "navbarActive"} */}
@@ -130,7 +130,7 @@ const ResponsiveAppBar = (props) => {
           </Container>
         </AppBar>
       {/* </HideOnScroll> */}
-    </>
+    </div>
       
   );
 };

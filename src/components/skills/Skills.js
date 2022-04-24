@@ -71,7 +71,7 @@ export default function Skills() {
                   <Typography
                     variant="h6"
                     align="center"
-                    color="text.secondary"
+                    color="text"
                     paragraph
                   >
                     {data.skillOne}
@@ -79,7 +79,7 @@ export default function Skills() {
                   <Typography
                     variant="h6"
                     align="center"
-                    color="text.secondary"
+                    color="text"
                     paragraph
                   >
                     {data.skillTwo}
@@ -87,7 +87,7 @@ export default function Skills() {
                   <Typography
                     variant="h6"
                     align="center"
-                    color="text.secondary"
+                    color="text"
                     paragraph
                   >
                     {data.skillThree}

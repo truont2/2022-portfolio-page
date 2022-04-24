@@ -36,7 +36,7 @@ theme.typography.h4 = {
 
 export default function Header() {
   return (
-    <div id="Home" className="header-section work" >
+    <div id="Home" className="angledBackground" >
       <CssBaseline />
       <Navbar />
       <div className="header container">

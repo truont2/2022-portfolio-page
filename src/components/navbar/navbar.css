@@ -14,6 +14,14 @@
   transition: var(--transition);
   color: whitesmoke;
   z-index: 100;
+  padding: 0.7rem 1.7rem;
+}
+.navbarActive {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  z-index: 2;
 }
 
 .navbarContainer {
