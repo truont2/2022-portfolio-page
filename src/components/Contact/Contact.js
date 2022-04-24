@@ -32,7 +32,7 @@ export default function Contact() {
       }
 
   return (
-    <section id="Contact">
+    <div id="Contact">
         <Typography
           variant="h3"
           align="center"
@@ -70,6 +70,6 @@ export default function Contact() {
           </Button>
         </form>
       </div>
-    </section>
+    </div>
   );
 }

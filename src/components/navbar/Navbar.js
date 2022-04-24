@@ -4,27 +4,27 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
-import { makeStyles } from "@mui/styles";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import CssBaseline from "@mui/material/CssBaseline";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import HomeIcon from "@mui/icons-material/HomeOutlined";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenterOutlined";
 import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
-import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import "./navbar.css";
 
-const ResponsiveAppBar = (props) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  function HideOnScroll(props) {
+const ResponsiveAppBar = (props) => {
+
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: props.window ? window() : undefined
+  });
+
+    function HideOnScroll(props) {
     const { children, window } = props;
     // Note that you normally won't need to set the window ref as useScrollTrigger
     // will default to window.
@@ -34,19 +34,27 @@ const ResponsiveAppBar = (props) => {
     });
     
     return (
-
       <Slide appear={false} direction="down" in={!trigger}>
         {children}
       </Slide>
     );
   }
 
-  // change the nav bar to scroll to the section on interest
+  const styles = {
+    active:{
+      backdropFilter: "blur(15px)",
+      background: "rgba(0,0,0,.3)",
+      transition: "0.5s",
+    }
+  };
+
   return (
-    <React.Fragment >
+    <>
       <CssBaseline />
-      <HideOnScroll {...props}>
-        <AppBar className="navbar">
+      {/* <HideOnScroll> */}
+        {/* className={!trigger ? "navbar" : "navbarActive"} */}
+        {/* style={trigger ? styles.active : ''} */}
+      <AppBar className={!trigger ? "navbar" : "navbarActive"} >
           <Container maxWidth="lg">
             <Toolbar disableGutters className="navLinks">
               <Typography
@@ -69,6 +77,7 @@ const ResponsiveAppBar = (props) => {
                     size="large"
                     aria-label="home icon"
                     color="inherit"
+                    className="iconButton"
                   >
                     <HomeIcon />
                   </IconButton>
@@ -79,6 +88,7 @@ const ResponsiveAppBar = (props) => {
                     aria-label="about icon"
                     color="inherit"
                     onClick={() => (window.href = "#about")}
+                    className="iconButton"
                   >
                     <PersonOutlineIcon />
                   </IconButton>
@@ -89,6 +99,7 @@ const ResponsiveAppBar = (props) => {
                     size="large"
                     aria-label="Experience icon"
                     color="inherit"
+                    className="iconButton"
                   >
                     <BusinessCenterIcon />
                   </IconButton>
@@ -99,6 +110,7 @@ const ResponsiveAppBar = (props) => {
                     size="large"
                     aria-label="work icon"
                     color="inherit"
+                    className="iconButton"
                   >
                     <FolderOpenOutlinedIcon />
                   </IconButton>
@@ -108,33 +120,19 @@ const ResponsiveAppBar = (props) => {
                     size="large"
                     aria-label="Contact icon"
                     color="inherit"
+                    className="iconButton"
                   >
                     <ContactPhoneOutlinedIcon />
                   </IconButton>
                 </a>
               </Box>
-
-              {/* renders the 3 dots  */}
-              {/* <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                <IconButton
-                  size="large"
-                  aria-label="show more"
-                  aria-controls={mobileMenuId}
-                  aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
-                  color="inherit"
-                >
-                  <MoreIcon />
-                </IconButton>
-
-                {renderMobileMenu}
-              </Box> */}
             </Toolbar>
           </Container>
         </AppBar>
-      </HideOnScroll>
-      <Toolbar />
-    </React.Fragment>
+      {/* </HideOnScroll> */}
+    </>
+      
   );
 };
+
 export default ResponsiveAppBar;

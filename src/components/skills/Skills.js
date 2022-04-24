@@ -28,7 +28,7 @@ export default function Skills() {
     }
   `;
   return (
-    <div id="Experiences">
+    <div id="Skills">
       <CssBaseline />
       <div className="container">
         <Typography

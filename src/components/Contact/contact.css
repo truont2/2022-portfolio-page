@@ -58,11 +58,16 @@ textarea {
 }
 
 /* Medium Devices */
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__option {
+    width: 100%;
   }
 }
 

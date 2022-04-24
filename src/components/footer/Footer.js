@@ -36,75 +36,81 @@ function Copyright() {
 
 export default function StickyFooter() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-      }}
-      className="footer"
-    >
-      <CssBaseline />
+    <div id="footer">
       <Box
-        component="footer"
         sx={{
-          py: 3,
-          px: 2,
-          mt: "auto",
+          display: "flex",
+          flexDirection: "column",
         }}
+        className="footer"
       >
-        <Container maxWidth="sm">
-          <Fade bottom cascade>
-            <ThemeProvider theme={theme}>
-              <Typography variant="h3" align="center" color="inherit" paragraph>
-                Reach out to me!
-              </Typography>
-            </ThemeProvider>
-          </Fade>
-          <Stack
-            sx={{ p: 4 }}
-            direction="row"
-            spacing={2}
-            justifyContent="center"
-          >
-            <IconButton
-              size="large"
-              aria-label="Github"
-              color="inherit"
-              className="footer-icon"
+        <CssBaseline />
+        <Box
+          component="footer"
+          sx={{
+            py: 3,
+            px: 2,
+            mt: "auto",
+          }}
+        >
+          <Container maxWidth="sm">
+            <Fade bottom cascade>
+              <ThemeProvider theme={theme}>
+                <Typography
+                  variant="h3"
+                  align="center"
+                  color="inherit"
+                  paragraph
+                >
+                  Reach out to me!
+                </Typography>
+              </ThemeProvider>
+            </Fade>
+            <Stack
+              sx={{ p: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="center"
             >
-              <GitHubIcon />
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="Github"
-              color="inherit"
-              className="footer-icon"
-              onClick={() =>
-                (window.location.href =
-                  "https://www.linkedin.com/in/takaratruong/")
-              }
+              <IconButton
+                size="large"
+                aria-label="Github"
+                color="inherit"
+                className="footer-icon"
+              >
+                <GitHubIcon />
+              </IconButton>
+              <IconButton
+                size="large"
+                aria-label="Github"
+                color="inherit"
+                className="footer-icon"
+                onClick={() =>
+                  (window.location.href =
+                    "https://www.linkedin.com/in/takaratruong/")
+                }
+              >
+                <LinkedInIcon />
+              </IconButton>
+            </Stack>
+            <Typography
+              variant="h6"
+              align="center"
+              color="text.secondary"
+              paragraph
             >
-              <LinkedInIcon />
-            </IconButton>
-          </Stack>
-          <Typography
-            variant="h6"
-            align="center"
-            color="text.secondary"
-            paragraph
-          >
-            <a className="footerLink" href="mailto:takaraktruong@gmail.com">
-              takaraktruong@gmail.com
-            </a>
-          </Typography>
-          <Typography variant="h6" align="center" color="inherit" paragraph>
-            <span>
-              Made With <icon>❤</icon> by{" "}
-                Takara Truong
-            </span>
-          </Typography>
-        </Container>
+              <a className="footerLink" href="mailto:takaraktruong@gmail.com">
+                takaraktruong@gmail.com
+              </a>
+            </Typography>
+            <Typography variant="h6" align="center" color="inherit" paragraph>
+              <span>
+                Made With <icon>❤</icon> by Takara Truong
+              </span>
+            </Typography>
+          </Container>
+        </Box>
       </Box>
-    </Box>
+    </div>
   );
 }

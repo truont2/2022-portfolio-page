@@ -13,6 +13,7 @@
   backdrop-filter: blur(15px);
   transition: var(--transition);
   color: whitesmoke;
+  z-index: 100;
 }
 
 .navbarContainer {
@@ -27,15 +28,13 @@
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-  .h2 {
-    font-size: 2.75em;
-  }
-}
-
 
 .MuiMenu-list{
     width: 90vw;
+}
+
+.iconButton:hover {
+  background-color: rgb(72, 55, 160);
 }
 
 
@@ -43,5 +42,11 @@
   .navLinks {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .h2 {
+    font-size: 2.75em;
   }
 }

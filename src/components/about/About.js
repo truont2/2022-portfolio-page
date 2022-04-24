@@ -20,38 +20,57 @@ const theme = createTheme();
 
 export default function ComplexGrid() {
   return (
-    <div className="container" id="About">
-      <CssBaseline />
-      <Typography variant="h3" align="center" color="text.secondary" paragraph>
-        About Me
-      </Typography>
-      <Fade left>
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
-          className="About"
+    <div id="About">
+      <div className="container">
+        <CssBaseline />
+        <Typography
+          variant="h3"
+          align="center"
+          color="text.secondary"
+          paragraph
         >
-          <Grid item xs={12} sm={4} md={4}>
+          About Me
+        </Typography>
+        <Fade left>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            className="About"
+          >
+            <Grid item xs={12} sm={4} md={4}>
               <img alt="me" src={data.aboutImage} className="aboutImg" />
-          </Grid>
+            </Grid>
 
-          <Grid item xs={12} sm={4} md={4} container className="aboutText">
-            <Grid item container direction="column">
-                <Typography variant="h6" align="center" color="text.secondary" paragraph>
+            <Grid item xs={12} sm={4} md={4} container className="aboutText">
+              <Grid item container direction="column">
+                <Typography
+                  variant="h6"
+                  align="center"
+                  color="text.secondary"
+                  paragraph
+                >
                   {data.aboutParaOne}
                 </Typography>
-                <Typography variant="h6" align="center" color="text.secondary" paragraph>
+                <Typography
+                  variant="h6"
+                  align="center"
+                  color="text.secondary"
+                  paragraph
+                >
                   {data.aboutParaTwo}
                 </Typography>
                 <a href="#Contact">
-                    <Button className="button" variant="outlined">CONTACT ME</Button>
+                  <Button className="button" variant="outlined">
+                    CONTACT ME
+                  </Button>
                 </a>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Fade>
+        </Fade>
+      </div>
     </div>
   );
 }
