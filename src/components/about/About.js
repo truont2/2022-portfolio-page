@@ -63,7 +63,7 @@ export default function ComplexGrid() {
                 </Typography>
                 <a href="#Contact">
                   <Button className="button" variant="outlined">
-                    CONTACT ME
+                    Let's Talk
                   </Button>
                 </a>
               </Grid>

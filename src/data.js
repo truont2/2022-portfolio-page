@@ -79,9 +79,9 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "Full Stack Developer with a background in Biochemistry from the University of Washington. Graduated from the University of Washington Fullstack Development Coding Bootcamp. Motivated to take on new challenges and develop exciting and innovative applications.",
+    "Full Stack Developer with a background in Biochemistry. Graduated from the University of Washington Fullstack Development Coding Bootcamp. Motivated to take on new challenges and develop exciting and innovative applications.",
   aboutParaTwo:
-    "In my spare time, I like to play tennis, play computer games, and build Gundam models.",
+    "In my spare time, I like to play tennis, play Apex Legends, and build Gundam models.",
   aboutImage: user,
 
   //   End About Section ---------------------
