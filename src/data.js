@@ -142,7 +142,7 @@ export default {
   ],
 
   skillOne:
-    "Experienced in building web applications with both Front-End and Back-End technologies such as JavaScript, Reactjs, Nodejs, MySQL, MongoDB.",
+    "Experienced in building web applications with both Front-End and Back-End technologies such as HTML, JavaScript, Reactjs, Nodejs, Express.js, MySQL, and MongoDB.",
   skillTwo:
     "Passionate, quick-learner, and likes to work on challenging problems.",
   skillThree: "Currently learning AWS and developing a website for Fat Pig BBQ.",
