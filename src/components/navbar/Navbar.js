@@ -92,7 +92,7 @@ const ResponsiveAppBar = (props) => {
                 </IconButton>
               </a>
 
-              <a href="#Experiences">
+              <a href="#Skills">
                 <IconButton
                   size="large"
                   aria-label="Experience icon"
