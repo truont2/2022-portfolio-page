@@ -20,3 +20,12 @@
         margin-top: 20px;
     }
 }
+
+.button {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.button:hover {
+    background-color: rgb(17,113,239);
+}

@@ -12,7 +12,7 @@
 }
 
 .contact__option {
-  background: var(--gradient);
+  background: rgba(17, 113, 239, 0.695);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;

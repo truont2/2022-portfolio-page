@@ -79,27 +79,12 @@ export default {
 
   // About Secton --------------
   aboutParaOne:
-    "Full Stack Developer with a background in Biochemistry. Motivated to take on new challenges and develop exciting and innovative applications for users.",
+    "Full Stack Developer with a background in Biochemistry from the University of Washington. Graduated from the University of Washington Fullstack Development Coding Bootcamp. Motivated to take on new challenges and develop exciting and innovative applications.",
   aboutParaTwo:
     "In my spare time, I like to play tennis, play computer games, and build Gundam models.",
   aboutImage: user,
 
   //   End About Section ---------------------
-
-  // Education Section
-  education: [
-    {
-      schoolName: "Web Development",
-      descBullets: [
-        "Strong Foundation in JavaScript, HTML, and CSS",
-        "RESTful API",
-        "Backend experience working with databases such as SQL and MongoDB",
-        "Experience with ReactJS",
-        "Beginner level Java and Python",
-        "Passionate, quick-learner, and likes to work on challenging problems",
-      ],
-    },
-  ],
 
   // Skills Section ---------------
 
@@ -157,10 +142,10 @@ export default {
   ],
 
   skillOne:
-    "Experience building web applications with Front-End and Back-End technologies such as JavaScript, Reactjs, Nodejs, SQL and more.",
+    "Experienced in building web applications with both Front-End and Back-End technologies such as JavaScript, Reactjs, Nodejs, MySQL, MongoDB.",
   skillTwo:
-    "Passionate, quick-learner, and likes to work on challenging problems",
-  skillThree: "Currently learning AWS",
+    "Passionate, quick-learner, and likes to work on challenging problems.",
+  skillThree: "Currently learning AWS and developing a website for Fat Pig BBQ.",
   aboutImage: user,
 
   // End Skills Section --------------------------

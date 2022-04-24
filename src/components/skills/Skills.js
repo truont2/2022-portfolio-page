@@ -1,18 +1,10 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import Tooltip from "@mui/material/Tooltip";
-import Stack from "@mui/material/Stack";
 import Fade from "react-reveal/Fade";
-import { Container, IconButton } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import "./skills.css";
 import data from "../../data";
 import { Icon } from "@iconify/react";
@@ -27,6 +19,8 @@ export default function Skills() {
       background: navy;
     }
   `;
+
+
   return (
     <div id="Skills">
       <CssBaseline />
@@ -70,25 +64,40 @@ export default function Skills() {
               <Grid item container direction="column">
                   <Typography
                     variant="h6"
-                    align="center"
                     color="text"
                     paragraph
+                    sx={{
+                      textAlign: {
+                        md: "left",
+                        sm: "center"
+                      }
+                    }}
                   >
                     {data.skillOne}
                   </Typography>
                   <Typography
                     variant="h6"
-                    align="center"
                     color="text"
                     paragraph
+                    sx={{
+                      textAlign: {
+                        md: "left",
+                        sm: "center"
+                      }
+                    }}
                   >
                     {data.skillTwo}
                   </Typography>
                   <Typography
                     variant="h6"
-                    align="center"
                     color="text"
                     paragraph
+                    sx={{
+                      textAlign: {
+                        md: "left",
+                        sm: "center"
+                      }
+                    }}
                   >
                     {data.skillThree}
                   </Typography>

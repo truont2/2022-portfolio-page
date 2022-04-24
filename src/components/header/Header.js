@@ -14,6 +14,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import Resume from "../../assets/Takara_Truong_Resume.pdf";
 import Navbar from '../navbar/Navbar'
+import DownloadIcon from '@mui/icons-material/Download';
 
 import Lott from "../Lottie/Lottie.js";
 import codingAnimation from "../Lottie/coding.json";
@@ -116,7 +117,7 @@ export default function Header() {
                   color="blue"
                 >
                   <a href={Resume} download={Resume}>
-                    <Button className="buttons">DOWNLOAD RESUME</Button>
+                    <Button className="buttons"><DownloadIcon />DOWNLOAD RESUME</Button>
                   </a>
                   <a href="#Contact">
                     <Button className="buttons contact">CONTACT ME</Button>

@@ -4,7 +4,6 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import "./about.css";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import data from "../../data";
 import Fade from "react-reveal/Fade";
@@ -38,17 +37,27 @@ export default function ComplexGrid() {
               <Grid item container direction="column">
                 <Typography
                   variant="h6"
-                  align="center"
                   color="text.secondary"
                   paragraph
+                  sx={{
+                    textAlign: {
+                      md: "left",
+                      sm: "center"
+                    }
+                  }}
                 >
                   {data.aboutParaOne}
                 </Typography>
                 <Typography
                   variant="h6"
-                  align="center"
                   color="text.secondary"
                   paragraph
+                  sx={{
+                    textAlign: {
+                      md: "left",
+                      sm: "center"
+                    }
+                  }}
                 >
                   {data.aboutParaTwo}
                 </Typography>
