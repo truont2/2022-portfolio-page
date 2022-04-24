@@ -42,7 +42,7 @@ export default function Contact() {
           Contact Me
         </Typography>
         <div className="container contact__container">
-          <div className="contact__options">
+          {/* <div className="contact__options">
             <article className="contact__option">
               <AiOutlineMail className="contact__option-icon" />
               <h3>Email</h3>
@@ -51,7 +51,7 @@ export default function Contact() {
                 Send a message
               </a>
             </article>
-          </div>
+          </div> */}
           {/* End of contact options */}
           <form ref={form} onSubmit={sendEmail}>
             <input
