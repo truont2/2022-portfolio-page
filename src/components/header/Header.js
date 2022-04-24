@@ -12,7 +12,7 @@ import Typed from "react-typed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Takara_Truong_Resume.pdf";
 import Navbar from '../navbar/Navbar'
 
 import Lott from "../Lottie/Lottie.js";
