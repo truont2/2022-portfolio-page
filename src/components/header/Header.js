@@ -36,10 +36,10 @@ theme.typography.h4 = {
 
 export default function Header() {
   return (
-    <div id="Home" className="angledBackground" >
+    <div id="Home"  >
       <CssBaseline />
       <Navbar />
-      <div className="header container">
+      <div className="header container angledBackground">
         <Grid
           container
           direction="row"
