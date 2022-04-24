@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Work() {
   return (
-    <div id="Projects">
+    <div id="Projects" className="anchor">
       <div className="container angledBackgroundProjects">
         <Typography variant="h3" align="center" color="inherit" paragraph>
           Projects

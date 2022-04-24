@@ -1,12 +1,11 @@
 import * as React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import {useRef} from "react"
+import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { Typography, Button } from "@mui/material";
-import './contact.css'
+import "./contact.css";
 
 export default function Contact() {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,10 +28,11 @@ export default function Contact() {
       );
 
     e.target.reset();
-      }
+  };
 
   return (
-    <div id="Contact">
+    <div id="Contact" className="anchor">
+      <div className="container ">
         <Typography
           variant="h3"
           align="center"
@@ -41,34 +41,42 @@ export default function Contact() {
         >
           Contact Me
         </Typography>
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <AiOutlineMail className="contact__option-icon" />
-            <h3>Email</h3>
-            <h4>takaraktruong@gmail.com</h4>
-            <a href="mailto:takaraktruong@gmail.com" id="contactLink">Send a message</a>
-          </article>
+        <div className="container contact__container">
+          <div className="contact__options">
+            <article className="contact__option">
+              <AiOutlineMail className="contact__option-icon" />
+              <h3>Email</h3>
+              <h4>takaraktruong@gmail.com</h4>
+              <a href="mailto:takaraktruong@gmail.com" id="contactLink">
+                Send a message
+              </a>
+            </article>
+          </div>
+          {/* End of contact options */}
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <Button type="submit" className="send-button" variant="outlined">
+              Send Message
+            </Button>
+          </form>
         </div>
-        {/* End of contact options */}
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <Button type="submit" className="send-button" variant="outlined">
-            Send Message
-          </Button>
-        </form>
       </div>
     </div>
   );

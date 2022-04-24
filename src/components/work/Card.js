@@ -31,25 +31,36 @@ export default function MultiActionAreaCard({
         alt="project image"
       />
       <CardContent>
-      <div className="projectButton">
-        {project.url ? (
-          <Button
-            size="small"
-            onClick={() => (window.location.href = `${projectLink}`)}
-            className="button"
+        <div className="projectButton">
+          {project.url ? (
+            <a
+              href={`${projectLink}`}
+              target="_blank"
+              className="btn btn-primary"
+            >
+              <Button
+                size="small"
+                // onClick={() => (window.location.href = `${projectLink}`)}
+                className="button"
+              >
+                Live
+              </Button>
+            </a>
+          ) : null}
+          {project.github ? (
+            <a
+            href={`${project.github}`}
+            target="_blank"
+            className="btn btn-primary"
           >
-            Live
-          </Button>
-        ) : null}
-        {project.github ? (
-          <Button
-            size="small"
-            onClick={() => (window.location.href = `${project.github}`)}
-            className="button"
-          >
-            Github
-          </Button>
-        ) : null}
+            <Button
+              size="small"
+              className="button"
+            >
+              Github
+            </Button>
+          </a>
+          ) : null}
         </div>
         <Typography gutterBottom variant="h5" component="div">
           {heading}

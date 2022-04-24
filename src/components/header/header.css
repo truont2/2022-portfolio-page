@@ -23,13 +23,13 @@
 
 .angledBackground {
   background: linear-gradient(35deg,#11cdef,#1171ef)!important;
-  color: rgb(251, 253, 255);
+  color: rgb(255, 255, 255);
   position: relative;
   z-index: 1;
 }
 
 .angledBackground:after {
-  background: rgb(251, 253, 255);
+  background: rgb(255, 255, 255);
   bottom: 0;
   content: '';
   display: block;
@@ -37,7 +37,7 @@
   left: 0;
   position: absolute;
   right: 0;
-  transform: skewY(-1.5deg);
+  transform: skewY(-1.6deg);
   transform-origin: 100%;
   z-index: -1;
 }

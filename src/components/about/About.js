@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade";
 
 export default function ComplexGrid() {
   return (
-    <div id="About">
+    <div id="About" className="anchor">
       <div className="container">
         <CssBaseline />
         <Typography

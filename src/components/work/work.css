@@ -8,17 +8,17 @@
 
 .angledBackgroundProjects {
   background: linear-gradient(35deg,#11cdef,#1171ef)!important;
-  color: rgb(251, 253, 255);
+  color: rgb(255, 255, 255);
   position: relative;
   z-index: 1;
 }
 
 .angledBackgroundProjects:after {
-  background: rgb(251, 253, 255);
+  background: rgb(255, 255, 255);
   bottom: 0;
   content: '';
   display: block;
-  height: 12%;
+  height: 13%;
   left: 0;
   position: absolute;
   right: 0;

@@ -22,7 +22,7 @@ export default function Skills() {
 
 
   return (
-    <div id="Skills">
+    <div id="Skills" className="anchor">
       <CssBaseline />
       <div className="container">
         <Typography

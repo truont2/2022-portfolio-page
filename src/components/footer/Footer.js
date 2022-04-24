@@ -36,7 +36,7 @@ function Copyright() {
 
 export default function StickyFooter() {
   return (
-    <div id="footer">
+    <div id="footer" className="anchor">
       <Box
         sx={{
           display: "flex",
