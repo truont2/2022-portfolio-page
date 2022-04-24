@@ -26,6 +26,7 @@ theme.typography.h2 = {
     fontSize: '2.5rem',
   },
 };
+
 theme.typography.h4 = {
   fontSize: '2.125rem',
   '@media (max-width: 425px)': {
@@ -75,7 +76,7 @@ export default function Header() {
                   Takara Truong
                 </Typography>
                 <Typography
-                  variant="p"
+                  variant="h6"
                   align="center"
                   color="inherit"
                   paragraph

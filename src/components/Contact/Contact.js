@@ -46,8 +46,8 @@ export default function Contact() {
           <article className="contact__option">
             <AiOutlineMail className="contact__option-icon" />
             <h3>Email</h3>
-            <h4>truont2@gmail.com</h4>
-            <a href="mailto:truont2@gmail.com">Send a message</a>
+            <h4>takaraktruong@gmail.com</h4>
+            <a href="mailto:takaraktruong@gmail.com">Send a message</a>
           </article>
         </div>
         {/* End of contact options */}

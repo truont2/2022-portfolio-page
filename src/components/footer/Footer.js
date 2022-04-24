@@ -93,8 +93,8 @@ export default function StickyFooter() {
             color="text.secondary"
             paragraph
           >
-            <a className="footerLink" href="mailto:truont2@gmail.com">
-              truont2@gmail.com
+            <a className="footerLink" href="mailto:takaraktruong@gmail.com">
+              takaraktruong@gmail.com
             </a>
           </Typography>
           <Typography variant="h6" align="center" color="inherit" paragraph>
