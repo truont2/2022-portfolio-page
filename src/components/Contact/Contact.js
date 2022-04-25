@@ -1,16 +1,22 @@
 import * as React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Typography, Button } from "@mui/material";
 import "./contact.css";
 
 export default function Contact() {
+  const [send, setSend] = useState(false)
   const form = useRef();
+
+  // useEffect(() => {
+  //   setSend(false);
+  // }, [])
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setSend(true);
     emailjs
       .sendForm(
         "service_g1b9yab",
@@ -42,17 +48,6 @@ export default function Contact() {
           Contact Me
         </Typography>
         <div className="container contact__container">
-          {/* <div className="contact__options">
-            <article className="contact__option">
-              <AiOutlineMail className="contact__option-icon" />
-              <h3>Email</h3>
-              <h4>takaraktruong@gmail.com</h4>
-              <a href="mailto:takaraktruong@gmail.com" id="contactLink">
-                Send a message
-              </a>
-            </article>
-          </div> */}
-          {/* End of contact options */}
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
@@ -75,6 +70,7 @@ export default function Contact() {
             <Button type="submit" className="send-button" variant="outlined">
               Send Message
             </Button>
+            {send !== false ? <p id="thankYou">Thank you!</p> : <p></p>}
           </form>
         </div>
       </div>
